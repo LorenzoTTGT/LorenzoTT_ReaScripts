@@ -3,8 +3,6 @@
 ReaScript name: LorenzoTT_Multi Format Render
 Version: 1.0
 Author: LorenzoTT
-Version: 1.0
-Changelog: Initial release
 Licence: WTFPL
 REAPER: at least v5.962
 ]]

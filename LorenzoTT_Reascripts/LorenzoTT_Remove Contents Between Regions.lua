@@ -2,7 +2,6 @@
 ReaScript name: LorenzoTT_Remove Time Between Regions
 Version: 1.0
 Author: LorenzoTT
-Changelog: Initial release
 Licence: WTFPL
 REAPER: at least v5.962
 ]]
