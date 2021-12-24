@@ -1,4 +1,11 @@
-
+--[[
+ReaScript name:Set Selected Items Auto Fades To Custom Length in ms (default=300ms)
+Version: 1.0
+Author: LorenzoTT
+Changelog: Initial release
+Licence: WTFPL
+REAPER: at least v5.962
+]]
     local newAutoFadesLength = 300 --change the ms Auto Fades length here!
     local function no_undo()reaper.defer(function()end)end;
     local selItemsCount = reaper.CountSelectedMediaItems(0);

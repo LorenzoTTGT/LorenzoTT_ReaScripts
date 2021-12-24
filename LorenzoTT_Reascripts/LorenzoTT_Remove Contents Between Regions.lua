@@ -1,8 +1,11 @@
--- @description Remove Contents between regions
--- @version 1.0.1
--- @author Lorenzo Targhetta
--- @about
---   # this action will remove project zones between all the regions of a project
+--[[
+ReaScript name: Remove Time Between Regions
+Version: 1.0
+Author: LorenzoTT
+Changelog: Initial release
+Licence: WTFPL
+REAPER: at least v5.962
+]]
 
 
 
