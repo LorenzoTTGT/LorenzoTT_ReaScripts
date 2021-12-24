@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_Reascripts">
-  <category name="Example">
-    <reapack name="cfillion_Hello world.lua" type="script" desc="Hello world">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+<index version="1" name="LorenzoTT_Reascripts" commit="f41727e97bd08b4d32cba7c45c2978d5af0243ca">
+<category name="LorenzoTT_Reascripts"><reapack name="LorenzoTT_Add Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_cursorTimePositionToMarker"><version name="1.0" author="LorenzoTT" time="2021-12-24T15:36:03Z"><changelog><![CDATA[Initial release]]></changelog><source main="main">https://github.com/LorenzoTTGT/temptest2/raw/f41727e97bd08b4d32cba7c45c2978d5af0243ca/LorenzoTT_Reascripts/LorenzoTT_Add%20Marker%20from%20Cursor%20Time%20Position.lua</source></version></reapack><reapack name="LorenzoTT_Remove Contents Between Regions.lua" type="script" desc="Remove Contents between regions"><metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 This is an example of a package file. It installs itself as a ReaScript that does nothing but show "Hello World!" in REAPER's scripting console.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Packages may also include additional files specified using the @provides tag.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 This text is the documentation shown when using ReaPack's "About this package" feature. {\field{\*\fldinst{HYPERLINK "https://commonmark.org/"}}{\fldrslt{\ul
-Markdown
-}}}
- {\i formatting} is supported.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 this action will remove project zones between all the regions of a project\par}
 }
-]]></description>
-      </metadata>
-      <version name="1.0" author="cfillion" time="2021-01-04T23:30:32Z">
-        <source main="main">https://github.com/cfillion/reapack-repository-template/raw/58a3e39ba95bd0f35846aa1f39aa4cb2574295e1/Example/cfillion_Hello%20world.lua</source>
-      </version>
-    </reapack>
-  </category>
-  <metadata>
-    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+]]></description></metadata><version name="1.0.1" author="Lorenzo Targhetta" time="2021-12-24T15:36:03Z"><source main="main">https://github.com/LorenzoTTGT/temptest2/raw/f41727e97bd08b4d32cba7c45c2978d5af0243ca/LorenzoTT_Reascripts/LorenzoTT_Remove%20Contents%20Between%20Regions.lua</source></version></reapack></category><metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -50,6 +34,4 @@ https://github.com/{\f1 <your username>}/{\f1 <repository name>}/raw/master/inde
 }}}
 .\par}
 }
-]]></description>
-  </metadata>
-</index>
+]]></description></metadata></index>
