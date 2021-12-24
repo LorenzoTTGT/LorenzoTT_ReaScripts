@@ -1,4 +1,3 @@
-
 --[[
 ReaScript name: LorenzoTT_Multi Format Render
 Version: 1.0
