@@ -1,5 +1,5 @@
 --[[
-ReaScript name: Remove Time Between Regions
+ReaScript name: LorenzoTT_Remove Time Between Regions
 Version: 1.0
 Author: LorenzoTT
 Changelog: Initial release

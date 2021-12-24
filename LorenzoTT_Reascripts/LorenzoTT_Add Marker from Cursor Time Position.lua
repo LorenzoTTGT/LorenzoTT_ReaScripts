@@ -1,5 +1,5 @@
 --[[
-ReaScript name:LorenzoTT_cursorTimePositionToMarker
+ReaScript name: LorenzoTT_Cursor Time Position To Marker
 Version: 1.0
 Author: LorenzoTT
 Version: 1.0

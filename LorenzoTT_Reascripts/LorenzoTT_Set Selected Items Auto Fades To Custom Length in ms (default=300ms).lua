@@ -1,5 +1,5 @@
 --[[
-ReaScript name:Set Selected Items Auto Fades To Custom Length in ms (default=300ms)
+ReaScript name: LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms)
 Version: 1.0
 Author: LorenzoTT
 Changelog: Initial release

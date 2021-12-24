@@ -1,6 +1,6 @@
 
 --[[
-ReaScript name: Multi Format Render
+ReaScript name: LorenzoTT_Multi Format Render
 Version: 1.0
 Author: LorenzoTT
 Version: 1.0
