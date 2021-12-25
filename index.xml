@@ -13,7 +13,7 @@
       </version>
     </reapack>
     <reapack name="LorenzoTT_Remove Contents Between Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions -2">
-      <version name="1.0.1" author="Lorenzo Targhetta" time="2021-12-24T15:36:03Z">
+      <version name="1.0.1" author="LorenzoTT" time="2021-12-24T15:36:03Z">
         <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/f41727e97bd08b4d32cba7c45c2978d5af0243ca/LorenzoTT_Reascripts/LorenzoTT_Remove%20Contents%20Between%20Regions.lua</source>
       </version>
       <version name="1.0" author="LorenzoTT" time="2021-12-24T17:59:29Z">
