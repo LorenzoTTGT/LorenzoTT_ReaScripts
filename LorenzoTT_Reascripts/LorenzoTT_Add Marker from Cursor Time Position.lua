@@ -2,7 +2,6 @@
 ReaScript name: LorenzoTT_Cursor Time Position To Marker
 Version: 1.0
 Author: LorenzoTT
-Version: 1.0
 Licence: WTFPL
 REAPER: at least v5.962
 ]]
