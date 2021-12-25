@@ -1,0 +1,12 @@
+@description Display name/short description
+@version 1.0.5
+@author John Doe
+@about
+  # Your Package Title
+  Longer description/documentation for this package in *markdown*.
+@changelog
+  - Added super cool feature XYZ
+  - Removed unused triggers
+@provides
+   [darwin] reaper_braininterface.dylib http://example.com/download/$version/$path
+   [windows] reaper_braininterface.dll http://example.com/download/$version/$path
