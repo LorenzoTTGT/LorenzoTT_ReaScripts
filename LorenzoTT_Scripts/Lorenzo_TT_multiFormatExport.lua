@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Render
-Version: 1.3
+Version: 1.0
 Author: LorenzoTT
 Provides: LorenzoTT_libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
 ]]
