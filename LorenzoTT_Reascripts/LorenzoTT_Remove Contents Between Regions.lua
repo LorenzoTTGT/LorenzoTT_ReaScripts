@@ -1,5 +1,5 @@
 --[[
-ReaScript name: LorenzoTT_Remove Time Between Regions -2
+ReaScript name: LorenzoTT_Remove Time Between Regions
 Version: 1.0
 Author: LorenzoTT
 Licence: WTFPL
