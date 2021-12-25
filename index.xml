@@ -1,31 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_Reascripts" commit="e747c0648f6947ae8bc8114f556de394b1d1e1a4">
-  <category name="LorenzoTT_Scripts">
-    <reapack name="LorenzoTT_Add Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Cursor Time Position To Marker">
-      <version name="1.0" author="LorenzoTT" time="2021-12-25T02:08:50Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/06719cce57788eb7d58ab758e1241a1d31a0117d/LorenzoTT_Scripts/LorenzoTT_Add%20Marker%20from%20Cursor%20Time%20Position.lua</source>
-      </version>
-    </reapack>
-    <reapack name="LorenzoTT_Remove Contents Between Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions">
-      <version name="1.0" author="LorenzoTT" time="2021-12-25T02:08:50Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/06719cce57788eb7d58ab758e1241a1d31a0117d/LorenzoTT_Scripts/LorenzoTT_Remove%20Contents%20Between%20Regions.lua</source>
-      </version>
-    </reapack>
-    <reapack name="LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms).lua" type="script" desc="LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms)">
-      <version name="1.0" author="LorenzoTT" time="2021-12-25T02:08:50Z">
-        <changelog><![CDATA[Initial release]]></changelog>
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/06719cce57788eb7d58ab758e1241a1d31a0117d/LorenzoTT_Scripts/LorenzoTT_Set%20Selected%20Items%20Auto%20Fades%20To%20Custom%20Length%20in%20ms%20(default=300ms).lua</source>
-      </version>
-    </reapack>
-  </category>
-  <metadata>
-    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 LorenzoTT ReaPack Repository\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 ALLPASS live Exploring machine learning concepts applied to audio, the \u8216'Lazy Terms\u8217' project exemplifies sounds pushing popular music sound types (from traditional to dance) to a closed, ad hoc and abstract dynamical system. The presented music displays a \u8216'coherent ambiguity\u8217' feeling avoiding the lack of contents associated with unpredictable contemplation and willing to provoke attentional shifts, cognitive dissonance states which lets the only disposable function grounded in pure lyrical emotion. \u8232? In Allpass music each sound is early generated in a multichannel (4 to 8 channels) configuration, down mixed if needed, always aiming to a 3D immersive experience.\par}
-}
-]]></description>
-  </metadata>
-</index>
+<index version="1" name="LorenzoTT_Reascripts" commit="e747c0648f6947ae8bc8114f556de394b1d1e1a4">
+ 
