@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_Reascripts" commit="abccc0f886d36e765f6e20e757395f17d046061f">
+<index version="1" name="LorenzoTT_Reascripts" commit="b5899f3bce91d6541f7ea66ee95971e78a4a641b">
+  <category name="lorenzoTT_exts">
+    <reapack name="testextfile.ext" type="extension" desc="testextsfile">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Your Package Title\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Longer description/documentation for this package in {\i markdown}.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0.5" author="John Doe" time="2021-12-25T23:35:13Z">
+        <changelog><![CDATA[- Added super cool feature XYZ
+- Removed unused triggers]]></changelog>
+        <source file="../LorenzoTT_libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/7e0d8c082a7c0dd7fdb986d263845f77a0f587ba/LorenzoTT_libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
+      </version>
+    </reapack>
+  </category>
   <category name="LorenzoTT_Scripts">
     <reapack name="Lorenzo_TT_multiFormatExport.lua" type="script" desc="LorenzoTT_Multi Format Render">
       <version name="1.0" author="LorenzoTT" time="2021-12-25T22:58:37Z">
