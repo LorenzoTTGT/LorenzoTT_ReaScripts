@@ -2,7 +2,6 @@
 ReaScript name: LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms)
 Version: 1.0
 Author: LorenzoTT
-Changelog: Initial release
 ]]
     local newAutoFadesLength = 300 --change the ms Auto Fades length here!
     local function no_undo()reaper.defer(function()end)end;
