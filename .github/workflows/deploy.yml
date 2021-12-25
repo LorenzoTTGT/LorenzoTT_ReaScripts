@@ -24,5 +24,7 @@ jobs:
       run:  gem install reapack-index
     - name: Update index.xml
       run:  reapack-index --commit
+    - name: Erase older versions
+      run:  reapack-index --amend
     - name: Push changes
       run:  git push
