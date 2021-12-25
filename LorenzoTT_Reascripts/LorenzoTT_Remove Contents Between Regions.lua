@@ -1,9 +1,8 @@
 --[[
-ReaScript name: LorenzoTT_Remove Time Between Regions
+ReaScript name: LorenzoTT_Remove Time Between Regions -2
 Version: 1.0
 Author: LorenzoTT
 Licence: WTFPL
-REAPER: at least v5.962
 ]]
 
 
