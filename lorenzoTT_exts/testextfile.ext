@@ -1,4 +1,4 @@
-@description Display name/short description
+@description testextsfile
 @version 1.0.5
 @author John Doe
 @about
@@ -8,5 +8,4 @@
   - Added super cool feature XYZ
   - Removed unused triggers
 @provides
-   [darwin] reaper_braininterface.dylib http://example.com/download/$version/$path
-   [windows] reaper_braininterface.dll http://example.com/download/$version/$path
+    ../LorenzoTT_libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
