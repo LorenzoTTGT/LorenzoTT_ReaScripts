@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_Reascripts" commit="56670dac1a4d554f94d9d6b6b3ae75d0b46cbe6b">
+<index version="1" name="LorenzoTT_Reascripts" commit="6797ffab3ff45d2c200c4a81933256737cc46f8e">
   <category name="LorenzoTT_Reascripts">
     <reapack name="Lorenzo_TT_multiFormatExport-_3_GUI .lua" type="script" desc="LorenzoTT_Multi Format Render">
       <version name="1.0" author="LorenzoTT" time="2021-12-24T18:35:12Z">
@@ -12,7 +12,7 @@
         <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/f41727e97bd08b4d32cba7c45c2978d5af0243ca/LorenzoTT_Reascripts/LorenzoTT_Add%20Marker%20from%20Cursor%20Time%20Position.lua</source>
       </version>
     </reapack>
-    <reapack name="LorenzoTT_Remove Contents Between Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions">
+    <reapack name="LorenzoTT_Remove Contents Between Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions -2">
       <version name="1.0.1" author="Lorenzo Targhetta" time="2021-12-24T15:36:03Z">
         <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/f41727e97bd08b4d32cba7c45c2978d5af0243ca/LorenzoTT_Reascripts/LorenzoTT_Remove%20Contents%20Between%20Regions.lua</source>
       </version>
