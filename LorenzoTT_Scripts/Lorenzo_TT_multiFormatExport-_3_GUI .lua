@@ -2,6 +2,7 @@
 ReaScript name: LorenzoTT_Multi Format Render
 Version: 1.0
 Author: LorenzoTT
+@provides: LorenzoTT_WRITE_PDF_TO_DISK
 
 ]]
 

@@ -1,3 +1,5 @@
+-- @noindex
+
  
 PDF = {}
 PDF.new = function()
