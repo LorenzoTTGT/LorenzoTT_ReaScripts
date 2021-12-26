@@ -55,6 +55,7 @@ local _, AllRegionsAttr = ultraschall.GetAllRegions()
 local projectFilePath=""
 proj, projectFilePath=reaper.EnumProjects(-1, projectFilePath)
 local projectFilePathNoName = projectFilePath:gsub(projectName, "")
+local REAPERFolder = reaper.GetResourcePath()
 
 local OutputFilepath = projectFilePathNoName .. projectTitle .. " - MASTERED" .. "/" .. projectTitle
 
@@ -170,8 +171,11 @@ local function gorenderst()
     if (sel_MP3format[2] == true) 
         then _,_,_ = ultraschall.RenderProject_RenderTable(nil, OutputMP3320VBR, false, true, false) 
     end
+
     
- 
+    -- PLACE button dir choser for JPG here 
+    -- local _, imageDIR = reaper.JS_Dialog_BrowseForOpenFiles("select JPG image", REAPERFolder, "YOURLOGO.jpg", *.jpg, false )
+
     if (sel_PQsheet == true) 
     then 
         imageDIR = "test.jpg" --or dir variable form current script
