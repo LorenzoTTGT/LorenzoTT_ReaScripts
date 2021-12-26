@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Render
-Version: 1.0
+Version: 1.0.2
 Author: LorenzoTT
 Provides: 
 ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua
