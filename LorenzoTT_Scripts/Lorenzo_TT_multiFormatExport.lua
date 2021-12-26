@@ -1,8 +1,10 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Render
 Version: 1.0.4
-Author: LorenzoTT
-Provides: ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua ../LorenzoTT_libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
+Author: LorenzoT 
+-- @provides 
+-- ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
+-- ../LorenzoTT_libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
 
 ]]
 
