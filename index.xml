@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_Reascripts" commit="03e17ed9335b10cca574072dcaecb21969eb7efd">
+<index version="1" name="LorenzoTT_Reascripts" commit="cfbde6ae3df0ff56d94b4f0ec57fc3995a4a2587">
   <category name="LorenzoTT_Scripts">
     <reapack name="Lorenzo_TT_multiFormatExport.lua" type="script" desc="LorenzoTT_Multi Format Render">
       <version name="1.0" author="LorenzoTT" time="2021-12-25T22:58:37Z">
@@ -12,6 +12,10 @@
       <version name="1.0.3" author="LorenzoTT" time="2021-12-26T16:30:23Z">
         <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/03e17ed9335b10cca574072dcaecb21969eb7efd/LorenzoTT_Scripts/Lorenzo_TT_multiFormatExport.lua</source>
         <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/03e17ed9335b10cca574072dcaecb21969eb7efd/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
+      </version>
+      <version name="1.0.4" author="LorenzoT" time="2021-12-26T16:53:17Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/cfbde6ae3df0ff56d94b4f0ec57fc3995a4a2587/LorenzoTT_Scripts/Lorenzo_TT_multiFormatExport.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/cfbde6ae3df0ff56d94b4f0ec57fc3995a4a2587/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Add Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Cursor Time Position To Marker">
