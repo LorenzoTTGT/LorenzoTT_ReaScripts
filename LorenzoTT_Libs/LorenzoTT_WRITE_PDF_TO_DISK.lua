@@ -8,6 +8,8 @@ PDF.new = function()
   local object = {}  -- array of object contents
   local xref_table_offset  -- byte offset of xref table
   local jpgstream = {}
+  local imported_Image_Height = 10
+  local imported_Image_Width = 10
 
   local catalog_obj  -- global catalog object
   local pages_obj    -- global pages object
@@ -247,8 +249,10 @@ local use_im
     
     pg.image_stream = function(pg, str)
       jpgstream = str
-      
-      
+    end
+
+    pg.image_W_and_H = function(pg, str)
+      imported_Image_Width, imported_Image_Height = GetImageWidthHeight(str)
     end
 
     pg.set_char_spacing = function(pg, spc)
@@ -480,8 +484,8 @@ local use_im
       contents = {
         Type = "/XObject",
         Subtype = "/Image",
-        Height = 475,
-        Width = 461,
+        Height = imported_Image_Height,
+        Width = imported_Image_Width,
         ColorSpace = "/DeviceRGB",
         BitsPerComponent = "8",
         Length = string.len(jpgstream) + 1,
@@ -580,68 +584,3 @@ local use_im
 
   return pdf, pgnum
 end
-
-fileToStream = io.open("R-3372536-1327800270.jpg", "rb")
-
-fileToStreamBIN = fileToStream:read("*all")
- 
-
-p = PDF.new()
-
-
-helv = p:new_font{ name = "Helvetica" }
-times = p:new_font{ name = "Times-Roman" }
-
-page = p:new_page(1,1)
-
-
-page:image_stream(fileToStreamBIN) 
-
-
-page:setrgbcolor("stroke", 0.5, 0, 1)
-page:moveto(23, 745)
-page:lineto(50, 745)
-page:stroke()
-
-page:setrgbcolor("stroke", 0, 1, 0.3)
-page:moveto(250, 250)
-page:lineto(250, 350)
-page:stroke()
-
-page:save()
-
-page:begin_text()
-page:set_font(helv, 14)
-page:set_text_pos(100, 100)
-page:show("Hello, world!")
-page:end_text()
-
-page:begin_text()
-page:set_font(helv, 20)
-page:set_text_pos(20,750)
-page:show("PQ SHEET/TRACK LIST")
-page:end_text()
-
-page:begin_text()
-page:set_font(helv, 20)
-page:set_text_pos(20,720)
-page:show("ARTIST NAME: ")
-page:end_text()
-
-
-page:begin_text()
-page:set_font(times, 12)
-
-page:end_text()
-
-page:restore()
-
-page:save()
-page.ImageCm(40, 300, 300)
-page.ImageDo()
-page.restore() 
-
-page:add()
-
-
-p:write("testzero2.pdf")

@@ -174,20 +174,73 @@ local function gorenderst()
  
     if (sel_PQsheet == true) 
     then 
-    _ = ultraschall.WriteValueToFile(PQSheet_Filepath, "" , false, nil)
-    for region_i = 1, number_of_all_regions
-                do region_i_length = allregionsarray[region_i][1] - allregionsarray[region_i][0]
-                    region_i_name = allregionsarray[region_i][2]
-                    region_i_index = allregionsarray[region_i][3]
-                    trackNameToWrite = tostring(region_i_index) .. " - " .. region_i_name .. " " .. tostring(reaper.format_timestr(math.floor(region_i_length), "")):sub(1, -5)
-                    _ = ultraschall.WriteValueToFile(PQSheet_Filepath, "s" , false, true)
-                    _ = ultraschall.WriteValueToFile_Insert(PQSheet_Filepath, region_i , trackNameToWrite)
-                  
+        imageDIR = "test.jpg" --or dir variable form current script
 
+        fileToStream = io.open(imageDIR, "rb")
+
+        fileToStreamBIN = fileToStream:read("*all")
+ 
+        p = PDF.new()
+
+        helv = p:new_font{ name = "Helvetica" }
+        times = p:new_font{ name = "Times-Roman" }
+
+        page = p:new_page(1,1)
+
+        page:image_W_and_H(imageDIR)
+
+        page:image_stream(fileToStreamBIN) 
+
+        page:setrgbcolor("stroke", 0.5, 0, 1)
+        page:moveto(23, 745)
+        page:lineto(50, 745)
+        page:stroke()
+
+        page:setrgbcolor("stroke", 0, 1, 0.3)
+        page:moveto(250, 250)
+        page:lineto(250, 350)
+        page:stroke()
+
+        page:save()
+
+        page:begin_text()
+        page:set_font(helv, 14)
+        page:set_text_pos(100, 100)
+        page:show("Hello, world!")
+        page:end_text()
+
+        page:begin_text()
+        page:set_font(helv, 20)
+        page:set_text_pos(20,750)
+        page:show("PQ SHEET/TRACK LIST")
+        page:end_text()
+
+        page:begin_text()
+        page:set_font(helv, 20)
+        page:set_text_pos(20,720)
+        page:show("ARTIST NAME: ")
+        page:end_text()
+
+
+        page:begin_text()
+        page:set_font(times, 12)
+
+        page:end_text()
+
+        page:restore()
+
+        page:save()
+        page.ImageCm(40, 300, 300)
+        page.ImageDo()
+        page.restore() 
+
+        page:add()
+
+
+        p:write("testzero2.pdf")
                 end
                
     end
-end
     
 
 
