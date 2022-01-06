@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="09dea1efc28de8ea18faf5562d8c3344d60beb0e">
+<index version="1" name="LorenzoTT_ReaScripts" commit="feeb5077d3332871219bf3a697fa5b3240b8510f">
   <category name="LorenzoTT_Scripts">
     <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Cursor Time Position To Marker">
       <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z">
@@ -35,6 +35,12 @@
         <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/09dea1efc28de8ea18faf5562d8c3344d60beb0e/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
         <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/09dea1efc28de8ea18faf5562d8c3344d60beb0e/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
         <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/09dea1efc28de8ea18faf5562d8c3344d60beb0e/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
+      </version>
+      <version name="1.0.4" author="Lorenzo Targhetta" time="2022-01-06T18:21:13Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/feeb5077d3332871219bf3a697fa5b3240b8510f/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/feeb5077d3332871219bf3a697fa5b3240b8510f/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/feeb5077d3332871219bf3a697fa5b3240b8510f/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/feeb5077d3332871219bf3a697fa5b3240b8510f/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Remove Contents Between Regions, Stack Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions">
