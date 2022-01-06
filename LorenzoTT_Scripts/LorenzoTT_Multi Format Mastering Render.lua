@@ -356,11 +356,15 @@ local function gorenderst()
                     if (string.sub(mrkrName_V, 1, 5) == "sideB") or (string.sub(mrkrName_V, 1, 5) == "SideB")
                      then 
                        SideBstartAfter = mrkrs_ARR_V[mrkr_i_V][0]
+                       noSideB = 0
                      else
                        noSideB = 1
                     end
                 end
             
+
+    if noSideB = 0
+        then
       local nnRG_V, nnRG_ARR_V = ultraschall.GetAllRegions()
                 SideA_start = nnRG_ARR_V[1][0]
                 SideB_end = nnRG_ARR_V[nnRG_V][1]
@@ -383,6 +387,8 @@ local function gorenderst()
                   end
       distance_to_sideB_Start = SideB_start - SideBstartAfter 
       _ = ultraschall.MoveMarkersBy(SideBstartAfter-1, SideBstartAfter+1, distance_to_sideB_Start, false)
+      
+  end
       
       erase_Time_Between_Regions()
       
