@@ -591,6 +591,7 @@ if sel_DDP_Render[2] == true
         sel_Image_Size_Factor = GUI.Val("Logo Height")
         sel_Body_Offset_Factor = 690 - (sel_Image_Size_Factor)
         interlineFactor = 30
+        page2true = 0
 
         page = p:new_page(1,1)
         

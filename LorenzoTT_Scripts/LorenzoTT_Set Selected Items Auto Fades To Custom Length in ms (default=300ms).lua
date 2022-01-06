@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms)
-Version: 1.0
+Version: 1.1
 Author: Lorenzo Targhetta
 ]]
     local newAutoFadesLength = 300 --change the ms Auto Fades length here!
