@@ -363,7 +363,7 @@ local function gorenderst()
                 end
             
 
-    if noSideB = 0
+    if noSideB == 0
         then
       local nnRG_V, nnRG_ARR_V = ultraschall.GetAllRegions()
                 SideA_start = nnRG_ARR_V[1][0]
