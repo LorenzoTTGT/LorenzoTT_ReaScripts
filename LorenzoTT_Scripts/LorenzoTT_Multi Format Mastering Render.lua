@@ -8,7 +8,6 @@ Author: Lorenzo Targhetta
     ../LorenzoTT_Libs//LorenzoTT_spk77_Save table to file and load table from file_functions.lua
 ]]
 
-  
 -- Lokasenna's GUI Builder
 
 local lib_path =reaper.GetExtState("Lokasenna_GUI", "lib_path_v2")
