@@ -1,3 +1,4 @@
+-- @noindex
 -- Version: 1.0
 -- Main: False
 
