@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="a64ea2c5ae26c9d3a875cfd2892a299a9f73e915">
- <category name="LorenzoTT_Libs"><reapack name="LorenzoTT_spk77_Save table to file and load table from file_functions.lua" type="script"><version name="1.0" time="2022-01-06T16:31:55Z"><source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source></version></reapack></category><category name="LorenzoTT_Scripts"><reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Cursor Time Position To Marker"><version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z"><source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Time%20Position.lua</source></version></reapack><reapack name="LorenzoTT_Delete Markers By Name.lua" type="script" desc="Delete Project Markers By Name (or Name Inititals)"><version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z"><source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Delete%20Markers%20By%20Name.lua</source></version></reapack><reapack name="LorenzoTT_Remove Contents Between Regions, Stack Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions"><version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z"><source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Remove%20Contents%20Between%20Regions,%20Stack%20Regions.lua</source></version></reapack><reapack name="LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms).lua" type="script" desc="LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms)"><version name="1.0" author="LorenzoTT" time="2021-12-25T02:08:50Z"><changelog><![CDATA[Initial release]]></changelog><source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/06719cce57788eb7d58ab758e1241a1d31a0117d/LorenzoTT_Scripts/LorenzoTT_Set%20Selected%20Items%20Auto%20Fades%20To%20Custom%20Length%20in%20ms%20(default=300ms).lua</source></version></reapack></category><metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+<index version="1" name="LorenzoTT_ReaScripts" commit="12f36ed6f67743a6e6108009655b57818bd8f056">
+  <category name="LorenzoTT_Scripts">
+    <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Cursor Time Position To Marker">
+      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Time%20Position.lua</source>
+      </version>
+    </reapack>
+    <reapack name="LorenzoTT_Delete Markers By Name.lua" type="script" desc="Delete Project Markers By Name (or Name Inititals)">
+      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Delete%20Markers%20By%20Name.lua</source>
+      </version>
+    </reapack>
+    <reapack name="LorenzoTT_Remove Contents Between Regions, Stack Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions">
+      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Remove%20Contents%20Between%20Regions,%20Stack%20Regions.lua</source>
+      </version>
+    </reapack>
+    <reapack name="LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms).lua" type="script" desc="LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms)">
+      <version name="1.0" author="LorenzoTT" time="2021-12-25T02:08:50Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/06719cce57788eb7d58ab758e1241a1d31a0117d/LorenzoTT_Scripts/LorenzoTT_Set%20Selected%20Items%20Auto%20Fades%20To%20Custom%20Length%20in%20ms%20(default=300ms).lua</source>
+      </version>
+    </reapack>
+  </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -11,4 +35,6 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 And also the "js_ReaScriptAPI" Reaper>Extensions>ReaPack>Browse Packages> right+clik on js_ReaScriptAPI > Install > Apply or if its not found then copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories: https://github.com/ReaTeam/Extensions/raw/master/index.xml and redo the brows package search.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 And also the Lokasenna GUI, copy/paste this URL to Reaper>Extensions>ReaPack>Browse Packages> right+clik on Lokasenna GUI > Install > Apply more infos here: https://github.com/jalovatt/Lokasenna_GUI\par}
 }
-]]></description></metadata></index>
+]]></description>
+  </metadata>
+</index>
