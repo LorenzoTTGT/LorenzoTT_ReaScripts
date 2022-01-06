@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.4
+Version: 1.0.5
 Author: Lorenzo Targhetta
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
@@ -931,8 +931,8 @@ if sel_DDP_Render[2] == true
             interLineSpace = sel_Body_Offset_Factor - ((i_rndTrack + 1) * interlineFactorTitle)
             
             if  (i_rndTrack == allRegNmbr) and (interLineSpace > 50 ) then
+
             interLineSpace = sel_Body_Offset_Factor - ((i_rndTrack + 1) * interlineFactor)
-            
             page:setrgbcolor("stroke", 0, 0, 0)
             page:moveto(30, interLineSpace - 10)
             page:lineto(570, interLineSpace - 10)
