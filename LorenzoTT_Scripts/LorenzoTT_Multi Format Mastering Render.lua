@@ -1388,7 +1388,7 @@ OutputFilepathWAVProjSR16 = OutputFilepath .. " - " .. "WAV_" ..  projectSR_shor
 OutputFilepathMP3320CBR = OutputFilepath .. " - " .. "MP3_320_CBR"
 OutputFilepathMP3320CVBR = OutputFilepath .. " - " .. "MP3_320_VBR"
 OutputFilepathDDP = OutputFilepath .. " - " .. "DDP IMAGE"
-OutputFilepathVinilSides = OutputFilepath .. " - " .. "VINIL SIDES"
+OutputFilepathVinilSides = OutputFilepath .. " - " .. "VINYL SIDES"
 
 
 
