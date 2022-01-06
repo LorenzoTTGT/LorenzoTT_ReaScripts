@@ -1,6 +1,23 @@
 # LorenzoTT ReaPack Repository
 
-ALLPASS live
-Exploring machine learning concepts applied to audio, the ‘Lazy Terms’ project exemplifies sounds pushing popular music sound types (from traditional to dance) to a closed, ad hoc and abstract dynamical system.
-The presented music displays a ‘coherent ambiguity’ feeling avoiding the lack of contents associated with unpredictable contemplation and willing to provoke attentional shifts, cognitive dissonance states which lets the only disposable function grounded in pure lyrical emotion.  
-In Allpass music each sound is early generated in a multichannel (4 to 8 channels) configuration, down mixed if needed, always aiming to a 3D immersive experience.
+Welcome to My Reascript. 
+I do scipts for mastering workflows. 
+To install my scriptscopy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:
+https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/master/index.xml
+Then RReaper>Extensions>ReaPack>Browse Packages> right+clik on the LorenzoTT Script that you want to install > Install > Apply
+Then Reaper>Actions>Show Actions List> find the orenzoTT Script that you want to run> Run Action
+
+Make Sure to also install Ultraschall API, 
+copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:
+https://github.com/Ultraschall/ultraschall-lua-api-for-reaper/raw/master/ultraschall_api_index.xml
+
+And also the "js_ReaScriptAPI" 
+Reaper>Extensions>ReaPack>Browse Packages> right+clik on js_ReaScriptAPI > Install > Apply
+or if its not found then 
+copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:
+https://github.com/ReaTeam/Extensions/raw/master/index.xml
+and redo the brows package search.
+
+And also the Lokasenna GUI,
+copy/paste this URL to Reaper>Extensions>ReaPack>Browse Packages> right+clik on Lokasenna GUI > Install > Apply
+more infos here: https://github.com/jalovatt/Lokasenna_GUI

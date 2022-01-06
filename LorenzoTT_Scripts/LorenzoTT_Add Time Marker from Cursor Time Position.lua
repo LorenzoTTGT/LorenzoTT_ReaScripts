@@ -1,7 +1,7 @@
 --[[
 ReaScript name: LorenzoTT_Cursor Time Position To Marker
 Version: 1.0
-Author: LorenzoTT
+Author: Lorenzo Targhetta
 ]]
 
 local cursPosSecs = reaper.GetCursorPosition()
