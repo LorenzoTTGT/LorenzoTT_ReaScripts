@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.6
+Version: 1.0.7
 Author: Lorenzo Targhetta
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
@@ -457,8 +457,8 @@ local function gorenderst()
           reaper.Main_OnCommand(40200, 0)
         end
       reaper.AddProjectMarker(nil, false,0,0, "!" , 0)
-      _, _ = reaper.GetSet_LoopTimeRange(true, false, round((nnRG_ARR[1][0]),3)-2, round((nnRG_ARR[nnRG][1]),3), false)
-    
+    local nnRG, nnRG_ARR = ultraschall.GetAllRegions()
+      _, _ = reaper.GetSet_LoopTimeRange(true, false, 0,nnRG_ARR[nnRG][1], false)
       _,_,_ = ultraschall.RenderProject_RenderTable(nil, OutputDDP, false, true, false)
       
     
