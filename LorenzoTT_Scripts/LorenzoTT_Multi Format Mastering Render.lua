@@ -213,6 +213,15 @@ function fillFolderDest()
     
 end
 
+function setProjAuth()
+    local prAuth = GUI.Val("Project Artist")
+     _, prAuth2 = reaper.GetSetProjectInfo_String(nil, "PROJECT_AUTHOR", prAuth, 1)
+end
+function setProjTitle()
+local prTitle = GUI.Val("Project Title")
+_, prTitle2 = reaper.GetSetProjectInfo_String(nil, "PROJECT_TITLE", prTitle, 1)
+end
+
 local function gorenderst()
 
     local prTitle = GUI.Val("Project Title")
@@ -1084,7 +1093,7 @@ GUI.New("Set ProjArtist", "Button", {
     font = 3,
     col_txt = "black",
     col_fill = "white",
-    func = fillImageSourceDir
+    func = setProjAuth
 })
 
 GUI.New("Set ProjTitle", "Button", {
@@ -1097,7 +1106,7 @@ GUI.New("Set ProjTitle", "Button", {
     font = 3,
     col_txt = "black",
     col_fill = "white",
-    func = fillImageSourceDir
+    func = setProjTitle
 })
 
 
