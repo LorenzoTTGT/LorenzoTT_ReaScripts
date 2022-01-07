@@ -1,7 +1,9 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.7
+Version: 1.0.8
 Author: Lorenzo Targhetta
+@changelog
+    Side B starts at Region after marker or if marker is inside region
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
     ../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
