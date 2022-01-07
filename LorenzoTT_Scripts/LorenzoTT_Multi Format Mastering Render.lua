@@ -1,9 +1,9 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.8
+Version: 1.0.9
 Author: Lorenzo Targhetta
 @changelog
-    Side B starts at Region after marker or if marker is inside region
+    Vinyls Renders now: Selected Tracks Time Selection
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
     ../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
@@ -287,12 +287,12 @@ local function gorenderst()
                                                         9, nil, nil, nil, "IHBkZA==", false, nil, nil, nil, nil, nil, nil, nil, nil, 
                                                         nil, nil, nil, nil, nil, nil, nil, nil, nil, nil )
                                                         
-    local OutputVinylSideA = ultraschall.CreateNewRenderTable(0, 2, nil, nil, nil, nil, OutputFilepathVinilSides, VinilSideA_name, projectSR_INT,
+    local OutputVinylSideA = ultraschall.CreateNewRenderTable(3, 2, nil, nil, nil, nil, OutputFilepathVinilSides, VinilSideA_name, projectSR_INT,
                                                            2, 0, true, 9, false, false, 3, toWAV24, false, false, false, false,
                                                            0, true, false, "", false, false, true, false, false, 
                                                            3, false, 24)
    
-    local OutputVinylSideB = ultraschall.CreateNewRenderTable(0, 2, nil, nil, nil, nil, OutputFilepathVinilSides, VinilSideB_name, projectSR_INT,
+    local OutputVinylSideB = ultraschall.CreateNewRenderTable(3, 2, nil, nil, nil, nil, OutputFilepathVinilSides, VinilSideB_name, projectSR_INT,
                                                              2, 0, true, 9, false, false, 3, toWAV24, false, false, false, false,
                                                              0, true, false, "", false, false, true, false, false, 
                                                              3, false, 24)
