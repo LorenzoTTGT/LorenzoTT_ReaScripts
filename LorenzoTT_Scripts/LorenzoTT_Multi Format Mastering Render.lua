@@ -567,12 +567,12 @@ if sel_DDP_Render[2] == true
                 local region_i_start = nnRG_ARR_V[mrkr_i_V_2][0]
                 local region_i_end = nnRG_ARR_V[mrkr_i_V_2][1]
                 
-                if region_i_start < SideBstartAfter
+                if region_i_end < SideBstartAfter
                   then 
                     SideA_end = region_i_end
                     
-                elseif region_i_start > SideBstartAfter
-                  then 
+                elseif (region_i_end  > SideBstartAfter) or (region_i_start  > SideBstartAfter)
+                  then  
                     SideB_start = region_i_start
                     break
                 end
