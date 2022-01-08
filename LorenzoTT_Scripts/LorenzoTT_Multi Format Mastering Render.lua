@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.11
+Version: 1.0.12
 Author: Lorenzo Targhetta
 @changelog
     Vinyls Renders now: Selected Tracks Time Selection
@@ -45,12 +45,7 @@ dofile(reaper.GetResourcePath().."/Scripts/LorenzoTT_Reascripts/LorenzoTT_Libs/L
 
 
 --Variable Definitions
-retval, projectTitle = reaper.GetSetProjectInfo_String(nil, "PROJECT_TITLE", "no", 0)
-retval, projectAUTH = reaper.GetSetProjectInfo_String(nil, "PROJECT_AUTHOR", "no", 0)
-retval, projectName = reaper.GetSetProjectInfo_String(nil, "PROJECT_NAME", "no", 0)
-local projectSR = reaper.GetSetProjectInfo( 0, "PROJECT_SRATE", 0, false )
-local projectSR_INT = math.floor(projectSR)
-local projectSR_short = string.sub(tostring(projectSR_INT), 1, 2)
+local _, projectName = reaper.GetSetProjectInfo_String(nil, "PROJECT_NAME", "no", 0)
 --/ local FileNameWCPattern = "$region$track" /--
 local presetFilepath = reaper.GetResourcePath().."/Scripts/LorenzoTT_Reascripts/LorenzoTT_Presets/(DONT OPEN!)_LorenzoTT_ALLPRESETS.txt"
 local presetFilepathDIR = reaper.GetResourcePath().."/Scripts/LorenzoTT_Reascripts/LorenzoTT_Presets"
@@ -60,11 +55,10 @@ local allRegNmbr, allRegArr = ultraschall.GetAllRegions()
 local all_markers_count, _ = ultraschall.CountMarkersAndRegions()
 
 --Poroject filepath
-local projectFilePath=""
-proj, projectFilePath=reaper.EnumProjects(-1, projectFilePath)
-projectFilePathNoName = projectFilePath:gsub(projectName, "")
-local REAPERFolder = reaper.GetResourcePath()
-
+ local _, projectName = reaper.GetSetProjectInfo_String(nil, "PROJECT_NAME", "no", 0)
+    local projectFilePath=""
+    proj, projectFilePath=reaper.EnumProjects(-1, projectFilePath)
+    projectFilePathNoName = projectFilePath:gsub(projectName, "")
 
 --RenderStrings
 local toWAV24 = ultraschall.CreateRenderCFG_WAV(2, 2 , 3, 0, false)
@@ -198,21 +192,6 @@ function fillFolderDest()
      _, NewOutputFilepath = reaper.JS_Dialog_BrowseForFolder("Render Destination Folder", projectFilePathNoName )
     GUI.Val("Renders Destination", NewOutputFilepath)
     projectFilePathNoName = NewOutputFilepath
-    OutputFilepath = projectFilePathNoName .. "/" .. projectAUTH .." - ".. projectTitle .. " - MASTERED" .. "/" .. projectAUTH .. " - " .. projectTitle
-
-    PQSheet_Filepath = projectFilePathNoName .. "/" .. projectAUTH .." - ".. projectTitle .. "CD PQ-Sheet" .. ".pdf"
-
-    OutputFilepathWAV4424 = OutputFilepath .. " - " .. "WAV_4424"
-    OutputFilepathWAV4416 = OutputFilepath .. " - " .. "WAV_4416"
-    OutputFilepathWAV4824 = OutputFilepath .. " - " .. "WAV_4824"
-    OutputFilepathWAV4816 = OutputFilepath .. " - " .. "WAV_4816"
-    OutputFilepathWAVProjSR24 = OutputFilepath .. " - " .. "WAV_" ..  projectSR_short .. "24"
-    OutputFilepathWAVProjSR16 = OutputFilepath .. " - " .. "WAV_" ..  projectSR_short .. "16"
-    OutputFilepathMP3320CBR = OutputFilepath .. " - " .. "MP3_320_CBR"
-    OutputFilepathMP3320CVBR = OutputFilepath .. " - " .. "MP3_320_VBR"
-    OutputFilepathDDP = OutputFilepath .. " - " .. "DDP IMAGE"
-    OutputFilepathVinilSides = OutputFilepath .. " - " .. "VINIL SIDES"
-    
 end
 
 function setProjAuth()
@@ -225,12 +204,39 @@ _, prTitle2 = reaper.GetSetProjectInfo_String(nil, "PROJECT_TITLE", prTitle, 1)
 end
 
 local function gorenderst()
-
+    local _, projectName = reaper.GetSetProjectInfo_String(nil, "PROJECT_NAME", "no", 0)
+    local projectFilePath=""
+    proj, projectFilePath=reaper.EnumProjects(-1, projectFilePath)
+    projectFilePathNoName = projectFilePath:gsub(projectName, "")
+    local REAPERFolder = reaper.GetResourcePath()
+    local projectSR = reaper.GetSetProjectInfo(nil, "PROJECT_SRATE", 0, false )  
+    local projectSR_INT = math.floor(projectSR)
+    reaper.ShowConsoleMsg(projectSR)
+    local projectSR_short = string.sub(tostring(projectSR_INT), 1, 2)
     local prTitle = GUI.Val("Project Title")
     local prAuth = GUI.Val("Project Artist")
     _, prTitle2 = reaper.GetSetProjectInfo_String(nil, "PROJECT_TITLE", prTitle, 1)
 
     _, prAuth2 = reaper.GetSetProjectInfo_String(nil, "PROJECT_AUTHOR", prAuth, 1)
+
+    projectFilePathNoName = GUI.Val("Renders Destination")
+    OutputFilepath = projectFilePathNoName .. "/" .. prAuth .." - ".. prTitle .. " - MASTERED" .. "/" .. prAuth .. " - " .. prTitle
+    
+    PQSheet_Filepath = projectFilePathNoName .. "/" .. prAuth .." - ".. prTitle .. "CD PQ-Sheet" .. ".pdf"
+    
+    OutputFilepathWAV4424 = OutputFilepath .. " - " .. "WAV_4424"
+    OutputFilepathWAV4416 = OutputFilepath .. " - " .. "WAV_4416"
+    OutputFilepathWAV4824 = OutputFilepath .. " - " .. "WAV_4824"
+    OutputFilepathWAV4816 = OutputFilepath .. " - " .. "WAV_4816"
+    OutputFilepathWAVProjSR24 = OutputFilepath .. " - " .. "WAV_" ..  projectSR_short .. "24"
+    OutputFilepathWAVProjSR16 = OutputFilepath .. " - " .. "WAV_" ..  projectSR_short .. "16"
+    OutputFilepathMP3320CBR = OutputFilepath .. " - " .. "MP3_320_CBR"
+    OutputFilepathMP3320CVBR = OutputFilepath .. " - " .. "MP3_320_VBR"
+    OutputFilepathDDP = OutputFilepath .. " - " .. "DDP IMAGE"
+    OutputFilepathVinilSides = OutputFilepath .. " - " .. "VINIL SIDES"
+    
+    
+  
     local FileNameWCPattern = GUI.Val("File Name Pattern $") 
     local sel_WAVformat = GUI.Val("WAV Renders") 
     local sel_RenderDest = GUI.Val("Renders Destination")
@@ -366,7 +372,7 @@ local function gorenderst()
             
             if SideB1_true == 0
                 then
-                    reaper.ShowConsoleMsg(SideBstartAfter1)
+                    
                     local nnRG_V, nnRG_ARR_V = ultraschall.GetAllRegions()
                     SideA_start = nnRG_ARR_V[1][0]
                     SideB_end = nnRG_ARR_V[nnRG_V][1]
@@ -1191,7 +1197,6 @@ GUI.New("PQ Sheet", "Checklist", {
     dir = "v",
     pad = 4,
     font_a = 2,
-    font_b = 3,
     col_txt = "white",
     col_fill = "elm_fill",
     bg = "wnd_bg",
@@ -1210,7 +1215,6 @@ GUI.New("File Name Pattern $", "Textbox", {
     caption = "File Name Pattern $ : ",
     cap_pos = "left",
     font_a = 3,
-    font_b = 3,
     color = "white",
     bg = "wnd_bg",
     shadow = true,
@@ -1227,7 +1231,6 @@ GUI.New("Logo Image Source", "Textbox", {
     caption = "PQ-Sheet Logo : ",
     cap_pos = "left",
     font_a = 3,
-    font_b = 3,
     color = "white",
     bg = "wnd_bg",
     shadow = true,
@@ -1244,7 +1247,6 @@ GUI.New("Renders Destination", "Textbox", {
     caption = "Renders Destination Folder : ",
     cap_pos = "left",
     font_a = 3,
-    font_b = 3,
     color = "white",
     bg = "wnd_bg",
     shadow = true,
@@ -1261,7 +1263,6 @@ GUI.New("Logo Height", "Textbox", {
     caption = "Logo Height : ",
     cap_pos = "left",
     font_a = 3,
-    font_b = 3,
     color = "white",
     bg = "wnd_bg",
     shadow = true,
@@ -1278,7 +1279,6 @@ GUI.New("Optional PQ-Sheet Text", "Textbox", {
     caption = "opt. PQ Text : ",
     cap_pos = "left",
     font_a = 3,
-    font_b = 3,
     color = "white",
     bg = "wnd_bg",
     shadow = true,
@@ -1295,7 +1295,6 @@ GUI.New("Project Artist", "Textbox", {
     caption = " Project Artist  : ",
     cap_pos = "left",
     font_a = 3,
-    font_b = 3,
     color = "white",
     bg = "wnd_bg",
     shadow = true,
@@ -1312,7 +1311,6 @@ GUI.New("Project Title", "Textbox", {
     caption = " Project Title  : ",
     cap_pos = "left",
     font_a = 3,
-    font_b = 3,
     color = "white",
     bg = "wnd_bg",
     shadow = true,
@@ -1345,8 +1343,6 @@ GUI.New("Render Selected Formats", "Button", {
 })
 
 -- INTIAL PRESETS VALUES
-GUI.Val("Project Title", projectTitle)
-GUI.Val("Project Artist", projectAUTH)
 
 
 if not reaper.file_exists(presetFilepath)
@@ -1367,29 +1363,10 @@ end
 if GUI.Val("Logo Image Source") == "no logo"
 then GUI.Val("Logo Height", 0)
 end
-
-projectFilePathNoName = GUI.Val("Renders Destination")
-
-OutputFilepath = projectFilePathNoName .. "/" .. projectAUTH .." - ".. projectTitle .. " - MASTERED" .. "/" .. projectAUTH .. " - " .. projectTitle
-
-
-PQSheet_Filepath = projectFilePathNoName .. "/" .. projectAUTH .." - ".. projectTitle .. "CD PQ-Sheet" .. ".pdf"
-VinilSideA_name = projectAUTH.." - "..projectTitle.." - ".."VINYL SIDE A"
-VinilSideB_name = projectAUTH.." - "..projectTitle.." - ".."VINYL SIDE B"
- 
--- PQSheet_Filepath = projectFilePathNoName .. "/" .. projectAUTH .." - ".. projectTitle .. " - MASTERED" .. "/".. "CD - PQ-Sheet" .. " - " .. projectAUTH .. " - " .. projectTitle .. ".pdf"
-
-OutputFilepathWAV4424 = OutputFilepath .. " - " .. "WAV_4424"
-OutputFilepathWAV4416 = OutputFilepath .. " - " .. "WAV_4416"
-OutputFilepathWAV4824 = OutputFilepath .. " - " .. "WAV_4824"
-OutputFilepathWAV4816 = OutputFilepath .. " - " .. "WAV_4816"
-OutputFilepathWAVProjSR24 = OutputFilepath .. " - " .. "WAV_" ..  projectSR_short .. "24"
-OutputFilepathWAVProjSR16 = OutputFilepath .. " - " .. "WAV_" ..  projectSR_short .. "16"
-OutputFilepathMP3320CBR = OutputFilepath .. " - " .. "MP3_320_CBR"
-OutputFilepathMP3320CVBR = OutputFilepath .. " - " .. "MP3_320_VBR"
-OutputFilepathDDP = OutputFilepath .. " - " .. "DDP IMAGE"
-OutputFilepathVinilSides = OutputFilepath .. " - " .. "VINYL SIDES"
-
+local _, projectTitle = reaper.GetSetProjectInfo_String(nil, "PROJECT_TITLE", "no", 0)
+local _, projectAUTH = reaper.GetSetProjectInfo_String(nil, "PROJECT_AUTHOR", "no", 0)
+GUI.Val("Project Title", projectTitle)
+GUI.Val("Project Artist", projectAUTH)
 
 
 GUI.Init()
