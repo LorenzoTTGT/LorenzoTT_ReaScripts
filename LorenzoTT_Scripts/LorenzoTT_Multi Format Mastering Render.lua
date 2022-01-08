@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.9
+Version: 1.0.10
 Author: Lorenzo Targhetta
 @changelog
     Vinyls Renders now: Selected Tracks Time Selection
@@ -569,7 +569,7 @@ if sel_DDP_Render[2] == true
                 local region_i_start = nnRG_ARR_V[mrkr_i_V_2][0]
                 local region_i_end = nnRG_ARR_V[mrkr_i_V_2][1]
                 
-                if region_i_end < SideBstartAfter
+                if region_i_end <= SideBstartAfter
                   then 
                     SideA_end = region_i_end
                     
