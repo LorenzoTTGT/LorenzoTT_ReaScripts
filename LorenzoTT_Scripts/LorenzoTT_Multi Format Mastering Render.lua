@@ -387,7 +387,7 @@ local function gorenderst()
                         end
         distance_to_sideB_Start = (SideB_start - SideBstartAfter1)
         mrkrMovedBY = SideBstartAfter1 + distance_to_sideB_Start
-        _ = ultraschall.MoveMarkersBy(SideBstartAfter1-1, SideBstartAfter1+1, distance_to_sideB_Start, false)
+        _ = ultraschall.MoveMarkersBy(SideBstartAfter1-1, SideBstartAfter1+1, distance_to_sideB_Start+0.00001, false)
     end
       
       erase_Time_Between_Regions()
