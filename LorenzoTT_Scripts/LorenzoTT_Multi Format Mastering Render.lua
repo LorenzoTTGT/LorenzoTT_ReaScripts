@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.10
+Version: 1.0.11
 Author: Lorenzo Targhetta
 @changelog
     Vinyls Renders now: Selected Tracks Time Selection
@@ -339,58 +339,56 @@ local function gorenderst()
         
     end
 
-  if sel_DDP_Render[1] == true
-    then 
-      lorenzoTT_DeleteMarkersByName("#")
-      lorenzoTT_DeleteMarkersByName("@")
-      lorenzoTT_DeleteMarkersByName("!")
-      deleteallregions = reaper.NamedCommandLookup("_SWSMARKERLIST10")
-      regionsFromItems = reaper.NamedCommandLookup("_SWS_REGIONSFROMITEMS")
-      reaper.Main_OnCommand(deleteallregions, 0)
-      reaper.Main_OnCommand(40182, 0)
-      reaper.Main_OnCommand(regionsFromItems, 0)
+    if sel_DDP_Render[1] == true
+        then 
+        lorenzoTT_DeleteMarkersByName("#")
+        lorenzoTT_DeleteMarkersByName("@")
+        lorenzoTT_DeleteMarkersByName("!")
+        deleteallregions = reaper.NamedCommandLookup("_SWSMARKERLIST10")
+        regionsFromItems = reaper.NamedCommandLookup("_SWS_REGIONSFROMITEMS")
+        reaper.Main_OnCommand(deleteallregions, 0)
+        reaper.Main_OnCommand(40182, 0)
+        reaper.Main_OnCommand(regionsFromItems, 0)
    
-      local nnRG_yesAgain, nnRG_ARR_YA = ultraschall.GetAllRegions()
-      local nb_Allmrkrs_V, mrkrs_ARR_V = ultraschall.GetAllMarkers()
-                for mrkr_i_V = 1, nb_Allmrkrs_V
-                  do
+        local nnRG_yesAgain, nnRG_ARR_YA = ultraschall.GetAllRegions()
+        local nb_Allmrkrs_V, mrkrs_ARR_V = ultraschall.GetAllMarkers()
+            for mrkr_i_V = 1, nb_Allmrkrs_V
+                do
                     local mrkrName_V = mrkrs_ARR_V[mrkr_i_V][1]
-                    if (string.sub(mrkrName_V, 1, 5) == "sideB") or (string.sub(mrkrName_V, 1, 5) == "SideB")
-                     then 
-                       SideBstartAfter = mrkrs_ARR_V[mrkr_i_V][0]
-                       noSideB = 0
-                     else
-                       noSideB = 1
-                    end
-                end
+                        if (string.sub(mrkrName_V, 1, 5) == "sideB") or (string.sub(mrkrName_V, 1, 5) == "SideB")
+                            then 
+                                SideBstartAfter1 = mrkrs_ARR_V[mrkr_i_V][0]
+                                SideB1_true = 0
+                            else
+                                noSideB = 1
+                        end
+            end
             
-
-    if noSideB == 0
-        then
-      local nnRG_V, nnRG_ARR_V = ultraschall.GetAllRegions()
-                SideA_start = nnRG_ARR_V[1][0]
-                SideB_end = nnRG_ARR_V[nnRG_V][1]
+            if SideB1_true == 0
+                then
+                    reaper.ShowConsoleMsg(SideBstartAfter1)
+                    local nnRG_V, nnRG_ARR_V = ultraschall.GetAllRegions()
+                    SideA_start = nnRG_ARR_V[1][0]
+                    SideB_end = nnRG_ARR_V[nnRG_V][1]
                 
-                  for mrkr_i_V_2 = 1, nnRG_V 
-                    do 
-                      local region_i_start = nnRG_ARR_V[mrkr_i_V_2][0]
-                      local region_i_end = nnRG_ARR_V[mrkr_i_V_2][1]
+                        for mrkr_i_V_2 = 1, nnRG_V 
+                            do 
+                                local region_i_start = nnRG_ARR_V[mrkr_i_V_2][0]
+                                local region_i_end = nnRG_ARR_V[mrkr_i_V_2][1]
                       
-                      if region_i_start < SideBstartAfter
-                        then 
-                          SideA_end = region_i_end
-                          
-                      elseif region_i_start > SideBstartAfter
-                        then 
-                          SideB_start = region_i_start
-                          break
-                      end
+                                    if region_i_start  > SideBstartAfter1
+                                        then 
+                                            SideB_start = region_i_start
+                      
+                                            break
+                                    end
+                     
                   
-                  end
-      distance_to_sideB_Start = SideB_start - SideBstartAfter 
-      _ = ultraschall.MoveMarkersBy(SideBstartAfter-1, SideBstartAfter+1, distance_to_sideB_Start, false)
-      
-  end
+                        end
+        distance_to_sideB_Start = (SideB_start - SideBstartAfter1)
+        mrkrMovedBY = SideBstartAfter1 + distance_to_sideB_Start
+        _ = ultraschall.MoveMarkersBy(SideBstartAfter1-1, SideBstartAfter1+1, distance_to_sideB_Start, false)
+    end
       
       erase_Time_Between_Regions()
       
@@ -467,7 +465,7 @@ local function gorenderst()
       
   end
   
-if sel_DDP_Render[2] == true
+    if sel_DDP_Render[2] == true
     then 
   lorenzoTT_DeleteMarkersByName("#")
   lorenzoTT_DeleteMarkersByName("@")
@@ -543,7 +541,7 @@ if sel_DDP_Render[2] == true
       --Render DDP
       _,_,_ = ultraschall.RenderProject_RenderTable(nil, OutputDDP, false, true, false)
     
-  end
+    end
 
     if sel_VinylSides == true
       then
@@ -597,7 +595,7 @@ if sel_DDP_Render[2] == true
         
     
     if (sel_PQsheet[1] == true) 
-    then 
+        then 
         
 --WRITE PDF TO DISK HERE---
          
@@ -617,9 +615,9 @@ if sel_DDP_Render[2] == true
 -- Select Image File or NOT
         if GUI.Val("Logo Image Source") == "no logo"
         
-          then  fileToStreamBIN = "NO LOGO"
+            then  fileToStreamBIN = "NO LOGO"
 
-          else  fileToStream = io.open(tostring(sel_ImageSource), "rb")
+            else  fileToStream = io.open(tostring(sel_ImageSource), "rb")
                 fileToStreamBIN = fileToStream:read("*all")
                 sel_Image_w, sel_Image_h = GetImageWidthHeight(sel_ImageSource)
                 sel_Image_ratio = sel_Image_w / sel_Image_h
@@ -1029,11 +1027,11 @@ if sel_DDP_Render[2] == true
         
     end
         
-  if not reaper.file_exists(presetFilepath) then
+    if not reaper.file_exists(presetFilepath) then
       os.execute("mkdir " .."\"" .. presetFilepathDIR .. "\"")
-  local file = io.open(presetFilepath, "w")
+     local file = io.open(presetFilepath, "w")
         io.close(file)
-  end 
+    end 
   
   
   
