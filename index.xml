@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="ff7bf667bfc949523216d1fe08bb891616838173">
+<index version="1" name="LorenzoTT_ReaScripts" commit="bbe0151d3ce2d97708e1b287feae2187f73a9716">
   <category name="LorenzoTT_Scripts">
     <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Cursor Time Position To Marker">
       <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z">
@@ -87,6 +87,13 @@
         <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ff7bf667bfc949523216d1fe08bb891616838173/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
         <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ff7bf667bfc949523216d1fe08bb891616838173/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
         <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ff7bf667bfc949523216d1fe08bb891616838173/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
+      </version>
+      <version name="1.0.12" author="Lorenzo Targhetta" time="2022-01-08T20:10:13Z">
+        <changelog><![CDATA[Vinyls Renders now: Selected Tracks Time Selection]]></changelog>
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bbe0151d3ce2d97708e1b287feae2187f73a9716/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bbe0151d3ce2d97708e1b287feae2187f73a9716/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bbe0151d3ce2d97708e1b287feae2187f73a9716/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bbe0151d3ce2d97708e1b287feae2187f73a9716/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Remove Contents Between Regions, Stack Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions">
