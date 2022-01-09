@@ -1,8 +1,8 @@
 --[[
-ReaScript name: Delete Project Markers By Name (or Name Inititals)
-Version: 1.0.2
+ReaScript name: LorenzoTT_Delete Project Markers By Name (or Name Inititals)
+Version: 1.0.3
 Author: Lorenzo Targhetta
-Date: 06/01/2022
+Date: 09/01/2022
 ]]
 
 function case_insensitive_pattern(pattern)
