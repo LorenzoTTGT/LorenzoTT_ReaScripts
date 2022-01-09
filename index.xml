@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="1fba7db61badf17aa06ca51d0214825114c08cd4">
+<index version="1" name="LorenzoTT_ReaScripts" commit="d34df13d358814b63bf363bffe3a73ad4f361bae">
   <category name="Mastering Utility">
     <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Add Time Marker from Cursor Time Position">
       <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
@@ -34,6 +34,13 @@
         <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/3281f719e5238c6f1364045c153cfcd9dc62ba8e/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
         <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/3281f719e5238c6f1364045c153cfcd9dc62ba8e/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
         <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/3281f719e5238c6f1364045c153cfcd9dc62ba8e/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
+      </version>
+      <version name="1.0.14" author="Lorenzo Targhetta" time="2022-01-09T18:33:00Z">
+        <changelog><![CDATA[Changed JPG Filter]]></changelog>
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/d34df13d358814b63bf363bffe3a73ad4f361bae/Mastering%20Utility/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/d34df13d358814b63bf363bffe3a73ad4f361bae/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/d34df13d358814b63bf363bffe3a73ad4f361bae/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/d34df13d358814b63bf363bffe3a73ad4f361bae/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Project Sample Rate from Highest Item Sample Rate.lua" type="script" desc="LorenzoTT_Project Sample Rate from Highest Item Sample Rate">
