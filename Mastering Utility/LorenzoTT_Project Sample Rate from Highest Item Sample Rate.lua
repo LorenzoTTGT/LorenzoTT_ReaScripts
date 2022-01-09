@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Project Sample Rate from Highest Item Sample Rate
-Version: 1.0
+Version: 1.0.2
 Author: Lorenzo Targhetta
 @changelog
   initial release
@@ -28,10 +28,12 @@ function LorenzoTT_GetHighestItemSR()
 end
 
 --action
+reaper.Undo_BeginBlock()
 LorenzoTT_GetHighestItemSR()
 reaper.Audio_Quit()
 reaper.Audio_Init()
 reaper.UpdateTimeline()
+reaper.Undo_EndBlock("Project Sample Rate from Highest Item Sample Rate", -1)
 
 
 
