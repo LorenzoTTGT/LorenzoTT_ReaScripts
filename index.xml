@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="e855281e1b0f30683675607cee77b15e145f2cf9">
+<index version="1" name="LorenzoTT_ReaScripts" commit="bfb2c3ec11ed3f695151a9a27e49b9a6a58f77c6">
   <category name="Mastering Utility">
-    <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Cursor Time Position To Marker">
+    <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Add Time Marker from Cursor Time Position">
       <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
         <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Time%20Position.lua</source>
+      </version>
+      <version name="1.0.1" author="Lorenzo Targhetta" time="2022-01-09T01:26:58Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bfb2c3ec11ed3f695151a9a27e49b9a6a58f77c6/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Time%20Position.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Delete Markers By Name.lua" type="script" desc="Delete Project Markers By Name (or Name Inititals)">
       <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
         <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Delete%20Markers%20By%20Name.lua</source>
+      </version>
+      <version name="1.0.2" author="Lorenzo Targhetta" time="2022-01-09T01:26:58Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bfb2c3ec11ed3f695151a9a27e49b9a6a58f77c6/Mastering%20Utility/LorenzoTT_Delete%20Markers%20By%20Name.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Multi Format Mastering Render.lua" type="script" desc="LorenzoTT_Multi Format Mastering Render">
