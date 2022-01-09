@@ -1,9 +1,28 @@
 --[[
 ReaScript name: Delete Project Markers By Name (or Name Inititals)
-Version: 1.0
+Version: 1.0.2
 Author: Lorenzo Targhetta
 Date: 06/01/2022
 ]]
+
+function case_insensitive_pattern(pattern)
+
+  -- find an optional '%' (group 1) followed by any character (group 2)
+  local p = pattern:gsub("(%%?)(.)", function(percent, letter)
+
+    if percent ~= "" or not letter:match("%a") then
+      -- if the '%' matched, or `letter` is not a letter, return "as is"
+      return percent .. letter
+    else
+      -- else, return a case-insensitive character class of the matched letter
+      return string.format("[%s%s]", letter:lower(), letter:upper())
+    end
+
+  end)
+
+  return p
+end
+
 
 
 function lorenzoTT_DeleteMarkersByName(NameToDelete)
@@ -17,19 +36,20 @@ function lorenzoTT_DeleteMarkersByName(NameToDelete)
         mrkrsAllNb2, allmarkersarray2 = ultraschall.GetAllMarkers()
        
         if i_mrkr > mrkrsAllNb2
-                      then 
-                        break
+          then 
+            break
         end
         
-        local mrkr_i_name = allmarkersarray2[i_mrkr][1]
-        local mrkr_i_index = allmarkersarray2[i_mrkr][2]
+    local mrkr_i_name = allmarkersarray2[i_mrkr][1]
+    local mrkr_i_index = allmarkersarray2[i_mrkr][2]
+    local mrkr_i_Initials = string.sub(allmarkersarray2[i_mrkr][1], 1, nameLen)
+    
         
-          
         if i_mrkr > 0
             
             then
            
-              if (string.sub(allmarkersarray2[i_mrkr][1], 1, nameLen) == NameToDelete)
+              if NameToDelete:match(case_insensitive_pattern(mrkr_i_Initials))
                 then
                   _ =  reaper.DeleteProjectMarkerByIndex(nil,mrkr_i_index)
                   checknext = 1
@@ -41,38 +61,39 @@ function lorenzoTT_DeleteMarkersByName(NameToDelete)
 
         end
         
-        if checknext == 1
+        if checknext == 1 
             then
-                   for i_mrkr2 = i_mrkr, mrkrsAllNb2 do
-                      if i_mrkr2 == mrkrsAllNb2
-                        then
-                          break
-                      end
-                      if (string.sub(allmarkersarray2[i_mrkr2+1][1], 1, nameLen) ~= NameToDelete)
-                        then 
-                        --reaper.ShowConsoleMsg(mrkrsAllNb)
-                          break
-                      end
-                      if (string.sub(allmarkersarray2[i_mrkr2][1], 1, nameLen) == NameToDelete)
-                        then
-                        reaper.ShowConsoleMsg(allmarkersarray2[i_mrkr][1])
-                          _ =  reaper.DeleteProjectMarkerByIndex(nil,allmarkersarray2[i_mrkr][2])
-                        else
+              for i_mrkr2 = i_mrkr, mrkrsAllNb2 do
+               
+                  if i_mrkr2 == mrkrsAllNb2
+                    then
+                      break
+                    
+                  end
+                  mrkr_Next_i_Initials = string.sub(allmarkersarray2[i_mrkr2+1][1], 1, nameLen)
+                  rkr_Updt_i_name = string.sub(allmarkersarray2[i_mrkr2][1], 1, nameLen) 
+                  if NameToDelete:match(case_insensitive_pattern(mrkr_Next_i_Initials))
+                    then 
+                      
+                  end
+                  if NameToDelete:match(case_insensitive_pattern(mrkr_Updt_i_name))
+                    then
+                      _ =  reaper.DeleteProjectMarkerByIndex(nil,allmarkersarray2[i_mrkr][2])
+                    else
                         keepmarker = true
-                      end
-                    end
+                  end
+                
+              end
         
         end      
     end
-      return
 end
    
       
---examples
+--action
 local scriptname = "Delete Project Markers By Name (or Name Inititals)"
 local _, NameToDelete = reaper.GetUserInputs(scriptname, 1, "Name to Find (case sensitive)", "verse" )
 reaper.Undo_BeginBlock()
 lorenzoTT_DeleteMarkersByName(NameToDelete)
 reaper.Undo_EndBlock(scriptname, -1)
-
 

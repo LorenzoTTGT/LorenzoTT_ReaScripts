@@ -1,6 +1,6 @@
 --[[
-ReaScript name: LorenzoTT_Cursor Time Position To Marker
-Version: 1.0
+ReaScript name: LorenzoTT_Add Time Marker from Cursor Time Position
+Version: 1.0.1
 Author: Lorenzo Targhetta
 ]]
 
