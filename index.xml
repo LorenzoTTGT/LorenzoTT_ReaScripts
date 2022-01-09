@@ -1,119 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="767287d9dba2926722c3197d55003e9ef14bd7b1">
-  <category name="LorenzoTT_Scripts">
+<index version="1" name="LorenzoTT_ReaScripts" commit="e855281e1b0f30683675607cee77b15e145f2cf9">
+  <category name="Mastering Utility">
     <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Cursor Time Position To Marker">
-      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Time%20Position.lua</source>
+      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Time%20Position.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Delete Markers By Name.lua" type="script" desc="Delete Project Markers By Name (or Name Inititals)">
-      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Delete%20Markers%20By%20Name.lua</source>
+      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Delete%20Markers%20By%20Name.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Multi Format Mastering Render.lua" type="script" desc="LorenzoTT_Multi Format Mastering Render">
-      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:43:39Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/6fe2998acb8d99d854c2c21dd3e6c7b2e396d01a/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/6fe2998acb8d99d854c2c21dd3e6c7b2e396d01a/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/6fe2998acb8d99d854c2c21dd3e6c7b2e396d01a/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/6fe2998acb8d99d854c2c21dd3e6c7b2e396d01a/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.1" author="Lorenzo Targhetta" time="2022-01-06T17:19:55Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/858342d49fdc9ae066f7c0eb150373e53c0474a2/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/858342d49fdc9ae066f7c0eb150373e53c0474a2/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/858342d49fdc9ae066f7c0eb150373e53c0474a2/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/858342d49fdc9ae066f7c0eb150373e53c0474a2/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.2" author="Lorenzo Targhetta" time="2022-01-06T18:02:45Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/b617be95e57ffbe6587115916d95ce4f46597063/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/b617be95e57ffbe6587115916d95ce4f46597063/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/b617be95e57ffbe6587115916d95ce4f46597063/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/b617be95e57ffbe6587115916d95ce4f46597063/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.3" author="Lorenzo Targhetta" time="2022-01-06T18:12:03Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/09dea1efc28de8ea18faf5562d8c3344d60beb0e/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/09dea1efc28de8ea18faf5562d8c3344d60beb0e/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/09dea1efc28de8ea18faf5562d8c3344d60beb0e/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/09dea1efc28de8ea18faf5562d8c3344d60beb0e/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.4" author="Lorenzo Targhetta" time="2022-01-06T18:21:13Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/feeb5077d3332871219bf3a697fa5b3240b8510f/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/feeb5077d3332871219bf3a697fa5b3240b8510f/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/feeb5077d3332871219bf3a697fa5b3240b8510f/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/feeb5077d3332871219bf3a697fa5b3240b8510f/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.5" author="Lorenzo Targhetta" time="2022-01-06T18:47:58Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/8c3f235fcdaee0fc7d0cfd79956ecd4974f9b7aa/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/8c3f235fcdaee0fc7d0cfd79956ecd4974f9b7aa/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/8c3f235fcdaee0fc7d0cfd79956ecd4974f9b7aa/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/8c3f235fcdaee0fc7d0cfd79956ecd4974f9b7aa/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.6" author="Lorenzo Targhetta" time="2022-01-06T18:54:54Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/b6f15713d00c939d16e78a37072554ee5f5bbc04/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/b6f15713d00c939d16e78a37072554ee5f5bbc04/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/b6f15713d00c939d16e78a37072554ee5f5bbc04/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/b6f15713d00c939d16e78a37072554ee5f5bbc04/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.7" author="Lorenzo Targhetta" time="2022-01-06T22:28:24Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/388bfc2bfba058ba7cdc6442bb8a81266fa78243/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/388bfc2bfba058ba7cdc6442bb8a81266fa78243/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/388bfc2bfba058ba7cdc6442bb8a81266fa78243/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/388bfc2bfba058ba7cdc6442bb8a81266fa78243/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.8" author="Lorenzo Targhetta" time="2022-01-07T14:25:33Z">
-        <changelog><![CDATA[Side B starts at Region after marker or if marker is inside region]]></changelog>
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/68f48ef05d5c4b3a7e9feefdcc3eb2c4db8187ac/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/68f48ef05d5c4b3a7e9feefdcc3eb2c4db8187ac/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/68f48ef05d5c4b3a7e9feefdcc3eb2c4db8187ac/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/68f48ef05d5c4b3a7e9feefdcc3eb2c4db8187ac/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.9" author="Lorenzo Targhetta" time="2022-01-07T14:56:40Z">
+      <version name="1.0.12" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
         <changelog><![CDATA[Vinyls Renders now: Selected Tracks Time Selection]]></changelog>
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ec74521be0a75971541d86206769bc711cba7acd/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ec74521be0a75971541d86206769bc711cba7acd/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ec74521be0a75971541d86206769bc711cba7acd/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ec74521be0a75971541d86206769bc711cba7acd/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.10" author="Lorenzo Targhetta" time="2022-01-08T14:17:36Z">
-        <changelog><![CDATA[Vinyls Renders now: Selected Tracks Time Selection]]></changelog>
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/368f7d7e03b07894c3e4a9e9c8f4ddca1da0542d/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/368f7d7e03b07894c3e4a9e9c8f4ddca1da0542d/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/368f7d7e03b07894c3e4a9e9c8f4ddca1da0542d/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/368f7d7e03b07894c3e4a9e9c8f4ddca1da0542d/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.11" author="Lorenzo Targhetta" time="2022-01-08T15:21:49Z">
-        <changelog><![CDATA[Vinyls Renders now: Selected Tracks Time Selection]]></changelog>
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ff7bf667bfc949523216d1fe08bb891616838173/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ff7bf667bfc949523216d1fe08bb891616838173/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ff7bf667bfc949523216d1fe08bb891616838173/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/ff7bf667bfc949523216d1fe08bb891616838173/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
-      </version>
-      <version name="1.0.12" author="Lorenzo Targhetta" time="2022-01-08T20:10:13Z">
-        <changelog><![CDATA[Vinyls Renders now: Selected Tracks Time Selection]]></changelog>
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bbe0151d3ce2d97708e1b287feae2187f73a9716/LorenzoTT_Scripts/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bbe0151d3ce2d97708e1b287feae2187f73a9716/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bbe0151d3ce2d97708e1b287feae2187f73a9716/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
-        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bbe0151d3ce2d97708e1b287feae2187f73a9716/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Multi%20Format%20Mastering%20Render.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/LorenzoTT_Libs/LorenzoTT_GetImageSize.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua</source>
+        <source file="../LorenzoTT_Libs/LorenzoTT_spk77_Save table to file and load table from file_functions.lua">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/LorenzoTT_Libs/LorenzoTT_spk77_Save%20table%20to%20file%20and%20load%20table%20from%20file_functions.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Project Sample Rate from Highest Item Sample Rate.lua" type="script" desc="LorenzoTT_Project Sample Rate from Highest Item Sample Rate">
-      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:12:43Z">
+      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
         <changelog><![CDATA[initial release]]></changelog>
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/767287d9dba2926722c3197d55003e9ef14bd7b1/LorenzoTT_Scripts/LorenzoTT_Project%20Sample%20Rate%20from%20Highest%20Item%20Sample%20Rate.lua</source>
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Project%20Sample%20Rate%20from%20Highest%20Item%20Sample%20Rate.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Remove Contents Between Regions, Stack Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions">
-      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-06T16:31:55Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/a64ea2c5ae26c9d3a875cfd2892a299a9f73e915/LorenzoTT_Scripts/LorenzoTT_Remove%20Contents%20Between%20Regions,%20Stack%20Regions.lua</source>
+      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Remove%20Contents%20Between%20Regions,%20Stack%20Regions.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms).lua" type="script" desc="LorenzoTT_Set Selected Items Auto Fades To Custom Length in ms (default=300ms)">
-      <version name="1.0" author="LorenzoTT" time="2021-12-25T02:08:50Z">
-        <changelog><![CDATA[Initial release]]></changelog>
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/06719cce57788eb7d58ab758e1241a1d31a0117d/LorenzoTT_Scripts/LorenzoTT_Set%20Selected%20Items%20Auto%20Fades%20To%20Custom%20Length%20in%20ms%20(default=300ms).lua</source>
-      </version>
-      <version name="1.1" author="Lorenzo Targhetta" time="2022-01-06T17:09:26Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/97bdcba933a74b08c382468634988423f71131d9/LorenzoTT_Scripts/LorenzoTT_Set%20Selected%20Items%20Auto%20Fades%20To%20Custom%20Length%20in%20ms%20(default=300ms).lua</source>
+      <version name="1.1" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Set%20Selected%20Items%20Auto%20Fades%20To%20Custom%20Length%20in%20ms%20(default=300ms).lua</source>
       </version>
     </reapack>
   </category>
