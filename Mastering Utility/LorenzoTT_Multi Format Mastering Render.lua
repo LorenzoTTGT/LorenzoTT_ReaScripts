@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.12
+Version: 1.0.13
 Author: Lorenzo Targhetta
 @changelog
     Vinyls Renders now: Selected Tracks Time Selection
@@ -82,6 +82,26 @@ function SaveMultiExportPresets(fn, img, rdir, logo_H)
                 }
       table.save(presets, presetFilepath) -- save "presets" table
 end
+
+--case insensitive func
+function case_insensitive_pattern(pattern)
+
+  -- find an optional '%' (group 1) followed by any character (group 2)
+  local p = pattern:gsub("(%%?)(.)", function(percent, letter)
+
+    if percent ~= "" or not letter:match("%a") then
+      -- if the '%' matched, or `letter` is not a letter, return "as is"
+      return percent .. letter
+    else
+      -- else, return a case-insensitive character class of the matched letter
+      return string.format("[%s%s]", letter:lower(), letter:upper())
+    end
+
+  end)
+
+  return p
+end
+
 
 -- Erase time between regions---------
 function erase_Time_Between_Regions()
@@ -203,15 +223,16 @@ local prTitle = GUI.Val("Project Title")
 _, prTitle2 = reaper.GetSetProjectInfo_String(nil, "PROJECT_TITLE", prTitle, 1)
 end
 
+reaper.Undo_BeginBlock()
 local function gorenderst()
     local _, projectName = reaper.GetSetProjectInfo_String(nil, "PROJECT_NAME", "no", 0)
     local projectFilePath=""
     proj, projectFilePath=reaper.EnumProjects(-1, projectFilePath)
     projectFilePathNoName = projectFilePath:gsub(projectName, "")
     local REAPERFolder = reaper.GetResourcePath()
+    reaper.GetSetProjectInfo(0, "PROJECT_SRATE_USE", 1, true )
     local projectSR = reaper.GetSetProjectInfo(nil, "PROJECT_SRATE", 0, false )  
     local projectSR_INT = math.floor(projectSR)
-    reaper.ShowConsoleMsg(projectSR)
     local projectSR_short = string.sub(tostring(projectSR_INT), 1, 2)
     local prTitle = GUI.Val("Project Title")
     local prAuth = GUI.Val("Project Artist")
@@ -361,7 +382,10 @@ local function gorenderst()
             for mrkr_i_V = 1, nb_Allmrkrs_V
                 do
                     local mrkrName_V = mrkrs_ARR_V[mrkr_i_V][1]
-                        if (string.sub(mrkrName_V, 1, 5) == "sideB") or (string.sub(mrkrName_V, 1, 5) == "SideB")
+                    local mrkName_V_Inititals = string.sub(mrkrName_V, 1, 5)
+                    local sideB = "sideB"
+
+                        if  sideB:match(case_insensitive_pattern(mrkName_V_Inititals))
                             then 
                                 SideBstartAfter1 = mrkrs_ARR_V[mrkr_i_V][0]
                                 SideB1_true = 0
@@ -411,28 +435,31 @@ local function gorenderst()
                            do 
                              local markcount_i_name = allREGmarkersarray[marker_1][1]
                              local markcount_i_name = tostring(markcount_i_name)
-                             
+                             local artistMrkr = "artist"
+                             local isrcMrkr = "isrc"
+                             local sngWrMrkr = "sngWr"
+
                              --if markcount_i_name DELETE #MARKER -----
-                              if (string.sub(markcount_i_name, 1, 6) == "Artist") or (string.sub(markcount_i_name, 1, 6) == "artist")
-                               then 
-                                 TrackArtistname = markcount_i_name:gsub("Artist=", "")
-                                 TrackArtistname = TrackArtistname:gsub("artist=", "")
+                              if artistMrkr:match(case_insensitive_pattern(string.sub(markcount_i_name, 1, 6)))
+                            
+                                then 
+                                 TrackArtistname = string.sub(markcount_i_name, 8)
+                                 
                            
                               end
                               
                               
-                              if (string.sub(markcount_i_name, 1, 4) == "ISRC") or (string.sub(markcount_i_name, 1, 4) == "isrc")
+                              if isrcMrkr:match(case_insensitive_pattern(string.sub(markcount_i_name, 1, 4)))
                                 then 
-                                  TrackISRC = markcount_i_name:gsub("ISRC=", "")
-                                  TrackISRC = TrackISRC:gsub("isrc=", "")
+                                  TrackISRC = string.sub(markcount_i_name, 6)
       
                               end
                               
                                 
-                              if (string.sub(markcount_i_name, 1, 4) == "SONGWRITER") or (string.sub(markcount_i_name, 1, 4) == "songwriter")
+                              if sngWrMrkr:match(case_insensitive_pattern(string.sub(markcount_i_name, 1, 5)))
                                 then 
-                                  TrackSngWR = markcount_i_name:gsub("SONGWRITER=", "")
-                                  TrackSngWR = TrackSngWR:gsub("songwriter=", "")
+                                  TrackSngWR = string.sub(markcount_i_name, 7)
+                                 
                                                               
                               end
                         
@@ -1046,7 +1073,7 @@ local function gorenderst()
  
 end
     
-
+reaper.Undo_EndBlock("LorenzoTT_Multi Format Mastering Render", -1)
 
 GUI.New("WAV Renders", "Checklist", {
     z = 11,
