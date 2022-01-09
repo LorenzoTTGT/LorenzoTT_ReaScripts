@@ -495,7 +495,7 @@
                  ColorSpace = "/DeviceRGB",
                  BitsPerComponent = "8",
                  Length = string.len(jpgstream) + 1,
-                 Filter = "/DCTDecode"
+                 Filter = "/FlateDecode"
                }
              }
           
