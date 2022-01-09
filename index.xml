@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="3281f719e5238c6f1364045c153cfcd9dc62ba8e">
+<index version="1" name="LorenzoTT_ReaScripts" commit="1fba7db61badf17aa06ca51d0214825114c08cd4">
   <category name="Mastering Utility">
     <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Add Time Marker from Cursor Time Position">
       <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
@@ -40,6 +40,10 @@
       <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Project%20Sample%20Rate%20from%20Highest%20Item%20Sample%20Rate.lua</source>
+      </version>
+      <version name="1.0.2" author="Lorenzo Targhetta" time="2022-01-09T13:15:34Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/1fba7db61badf17aa06ca51d0214825114c08cd4/Mastering%20Utility/LorenzoTT_Project%20Sample%20Rate%20from%20Highest%20Item%20Sample%20Rate.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Remove Contents Between Regions, Stack Regions.lua" type="script" desc="LorenzoTT_Remove Time Between Regions">
