@@ -1,9 +1,9 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.13
+Version: 1.0.14
 Author: Lorenzo Targhetta
 @changelog
-    Vinyls Renders now: Selected Tracks Time Selection
+    Changed JPG Filter
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
     ../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
