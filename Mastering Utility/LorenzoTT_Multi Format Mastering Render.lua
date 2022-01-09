@@ -1,9 +1,9 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.14
+Version: 1.0.15
 Author: Lorenzo Targhetta
 @changelog
-    Changed JPG Filter
+    espace avant CD Sheet
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
     ../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
@@ -243,7 +243,7 @@ local function gorenderst()
     projectFilePathNoName = GUI.Val("Renders Destination")
     OutputFilepath = projectFilePathNoName .. "/" .. prAuth .." - ".. prTitle .. " - MASTERED" .. "/" .. prAuth .. " - " .. prTitle
     
-    PQSheet_Filepath = projectFilePathNoName .. "/" .. prAuth .." - ".. prTitle .. "CD PQ-Sheet" .. ".pdf"
+    PQSheet_Filepath = projectFilePathNoName .. "/" .. prAuth .." - ".. prTitle .. " - CD PQ-Sheet" .. ".pdf"
     
     OutputFilepathWAV4424 = OutputFilepath .. " - " .. "WAV_4424"
     OutputFilepathWAV4416 = OutputFilepath .. " - " .. "WAV_4416"
