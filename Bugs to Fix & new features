@@ -1,15 +1,15 @@
 - new Flac render option
-- keep default render Directory to proj Dir
+- fix keep default render Directory to proj Dir
 - add $track to render folders names
 - fix decode .jpg pdf on windows
 - new window for ddp metadata infos (not just using markers)
 - new UPC album code entry on main window or ddp window?
 - new pop up menu & store for filename patterns
-- fix footer notes drawing on pdf
+- add footer notes drawing on pdf
 - fix number of pdf pages limited to 2 (create infinite function)
-- force ddp auto to render only selected track
-- save values to proj preset not general plugin preset
-- save proj/album artist and proj/album title to external proj preset not to author/title
-- render pq sheet to same foldar as audio renders/create folder if no audio has been rendered yet
-- desensitivize all names
-- create lorenzoTT general functions lib
+- fix force ddp auto to render only selected track
+- fix save values to proj preset not general plugin preset
+- fix save proj/album artist and proj/album title to external proj preset not to author/title
+- fix render pq sheet to same foldar as audio renders/create folder if no audio has been rendered yet
+- fix desensitivize all names
+- new lorenzoTT general functions lib
