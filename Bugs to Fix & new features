@@ -1,2 +1,7 @@
 - add Flac
 - keep default render Directory to proj Dir
+- add $track to render folders names
+- decode .jpg pdf on windows
+- new window for ddp metadata infos (not just using markers)
+- add UPC album code entry
+- pop up menu & store for filename patterns
