@@ -1,7 +1,7 @@
-## ADDS TO DO
--[ ]add $track to render folders names
--[ ]add footer notes drawing on pdf
--[ ]add Vinyl Sides C + D
+## ADDS TO DO  
+-[ ] add $track to render folders names
+-[ ] add footer notes drawing on pdf
+-[ ] add Vinyl Sides C + D
 
 ## FIXES TO DO
 -[ ]fix keep default render Directory to proj Dir
