@@ -1,5 +1,5 @@
 ## ADDS TO DO  
-- [ ] add $track to render folders names;
+- [ ] add $track to render folders names
 - [ ] add footer notes drawing on pdf:
 - [ ] add Vinyl Sides C + D;
 
