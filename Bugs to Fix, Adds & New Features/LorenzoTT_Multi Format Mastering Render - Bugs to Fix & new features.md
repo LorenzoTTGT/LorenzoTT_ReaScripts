@@ -13,7 +13,7 @@
 - [ ] fix render pq sheet to same foldar as audio renders/create folder if no audio has been rendered yet
 - [ ] fix desensitivize all names
 - [ ] fix metadata embedding in rendering
-- [ ] fix accants and special characters in pdf
+- [ ] fix accents and special characters in pdf
 
 ## NEW FEATURES TO DO
 - [ ] new UPC album code entry on main window or ddp window?
