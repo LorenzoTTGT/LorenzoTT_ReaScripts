@@ -1,7 +1,9 @@
-- add Flac
+- new Flac render option
 - keep default render Directory to proj Dir
 - add $track to render folders names
-- decode .jpg pdf on windows
+- fix decode .jpg pdf on windows
 - new window for ddp metadata infos (not just using markers)
-- add UPC album code entry
-- pop up menu & store for filename patterns
+- new UPC album code entry on main window or ddp window?
+- new pop up menu & store for filename patterns
+- fix footer notes drawing on pdf
+- fix number of pdf limited to 2 (create infinite function)
