@@ -6,4 +6,10 @@
 - new UPC album code entry on main window or ddp window?
 - new pop up menu & store for filename patterns
 - fix footer notes drawing on pdf
-- fix number of pdf limited to 2 (create infinite function)
+- fix number of pdf pages limited to 2 (create infinite function)
+- force ddp auto to render only selected track
+- save values to proj preset not general plugin preset
+- save proj/album artist and proj/album title to external proj preset not to author/title
+- render pq sheet to same foldar as audio renders/create folder if no audio has been rendered yet
+- desensitivize all names
+- create lorenzoTT general functions lib
