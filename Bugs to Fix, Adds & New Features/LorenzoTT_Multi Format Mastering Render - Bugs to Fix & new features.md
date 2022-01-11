@@ -10,7 +10,7 @@
 - [ ] fix force ddp auto to render only selected track
 - [ ] fix save values to proj preset not general plugin preset
 - [ ] fix save proj/album artist and proj/album title to external proj preset not to author/title
-- [ ] fix render pq sheet to same foldar as audio renders/create folder if no audio has been rendered yet
+- [ ] fix render pq sheet to same folder as audio renders/create folder if no audio has been rendered yet
 - [ ] fix desensitivize all names
 - [ ] fix metadata embedding in rendering
 - [ ] fix accents and special characters in pdf
