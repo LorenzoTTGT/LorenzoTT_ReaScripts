@@ -245,8 +245,10 @@ local function gorenderst()
     OutputFilepathWAVProjSR16 = OutputFilepath .. " - " .. "WAV_" ..  projectSR_short .. "16"
     OutputFilepathMP3320CBR = OutputFilepath .. " - " .. "MP3_320_CBR"
     OutputFilepathMP3320CVBR = OutputFilepath .. " - " .. "MP3_320_VBR"
-    OutputFilepathDDP = OutputFilepath .. " - " .. "DDP IMAGE"
-    OutputFilepathVinilSides = OutputFilepath .. " - " .. "VINIL SIDES"
+    OutputFilepathDDP = OutputFilepath .. " - DDP IMAGE"
+    OutputFilepathVinylSides = OutputFilepath .. " - VINYL SIDES"
+    VinilSideA_name =  prAuth .." - ".. prTitle .. " - VINYL SIDE A"
+    VinilSideB_name =  prAuth .." - ".. prTitle .. " - VINYL SIDE B"
     local FileNameWCPattern = GUI.Val("File Name Pattern $") 
     local sel_WAVformat = GUI.Val("WAV Renders") 
     local sel_RenderDest = GUI.Val("Renders Destination")
@@ -303,12 +305,12 @@ local function gorenderst()
                                                         9, nil, nil, nil, "IHBkZA==", false, nil, nil, nil, nil, nil, nil, nil, nil, 
                                                         nil, nil, nil, nil, nil, nil, nil, nil, nil, nil )
                                                         
-    local OutputVinylSideA = ultraschall.CreateNewRenderTable(3, 2, nil, nil, nil, nil, OutputFilepathVinilSides, VinilSideA_name, projectSR_INT,
+    local OutputVinylSideA = ultraschall.CreateNewRenderTable(3, 2, nil, nil, nil, nil, OutputFilepathVinylSides, VinilSideA_name, projectSR_INT,
                                                            2, 0, true, 9, false, false, 3, toWAV24, false, false, false, false,
                                                            0, true, false, "", false, false, true, false, false, 
                                                            3, false, 24)
    
-    local OutputVinylSideB = ultraschall.CreateNewRenderTable(3, 2, nil, nil, nil, nil, OutputFilepathVinilSides, VinilSideB_name, projectSR_INT,
+    local OutputVinylSideB = ultraschall.CreateNewRenderTable(3, 2, nil, nil, nil, nil, OutputFilepathVinylSides, VinilSideB_name, projectSR_INT,
                                                              2, 0, true, 9, false, false, 3, toWAV24, false, false, false, false,
                                                              0, true, false, "", false, false, true, false, false, 
                                                              3, false, 24)
