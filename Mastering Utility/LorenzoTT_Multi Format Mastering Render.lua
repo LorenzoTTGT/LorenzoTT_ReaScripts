@@ -1,9 +1,9 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.16
+Version: 1.0.17
 Author: Lorenzo Targhetta
 @changelog
-    Cleaned Indentation
+    Vinyl Sides names
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
     ../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
