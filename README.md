@@ -5,7 +5,7 @@ I do scipts for mastering workflows.
 
 
 To install my scriptscopy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:
-[https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/master/index.xml](https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/master/index.xml)
+https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/master/index.xml<br/>
 Then RReaper>Extensions>ReaPack>Browse Packages> right+clik on the LorenzoTT Script that you want to install > Install > Apply 
 Then Reaper>Actions>Show Actions List> find the orenzoTT Script that you want to run> Run Action
 
