@@ -1,9 +1,9 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.18
+Version: 1.0.19
 Author: Lorenzo Targhetta
 @changelog
-    Back to DCTDecode
+    JPG auto w & h
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
     ../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
