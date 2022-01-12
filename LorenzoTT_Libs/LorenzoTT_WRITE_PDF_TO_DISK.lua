@@ -85,7 +85,7 @@ PDF.new_LorenzoTT = function()
                 local i, str
                 for i, str in ipairs(obj.contents) 
                     do
-                    len = len + string.len(str) + 1
+                    len = len + string.len(str)
                 end
             end
             fh:write(string.format("<< /Length %d >>\n", len))
