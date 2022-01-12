@@ -1,6 +1,6 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.19
+Version: 1.0.20
 Author: Lorenzo Targhetta
 @changelog
     JPG auto w & h
@@ -605,7 +605,7 @@ local function gorenderst()
         page2true = 0
         local sel_ImageSource = GUI.Val("Logo Image Source")
         sel_Image_w, sel_Image_h = GetImageWidthHeight(sel_ImageSource)
-        page = p:new_page(1,1,sel_Image_w,sel_Image_h)
+        page = p:new_page(1,sel_Image_w,sel_Image_h)
         page2 = p:new_page(2,2) 
         -- Select Image File or NOT
         if GUI.Val("Logo Image Source") == "no logo"
