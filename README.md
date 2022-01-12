@@ -1,6 +1,6 @@
 # LorenzoTT ReaPack Repository
 
-Welcome to My Reascript. 
+Welcome to My Reascripts.  
 I do scipts for mastering workflows. 
 
 
