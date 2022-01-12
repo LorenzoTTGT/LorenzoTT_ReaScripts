@@ -1,7 +1,8 @@
 # LorenzoTT ReaPack Repository
 
 ## Welcome to My Reascripts. I make scripts and actions for mastering workflows in Reaper. 
-
+you can contact me here: lorrenzotarghetta@gmail.com
+and donate here to my Paypal: lorenzo.7waka@gmail.com
 
 To install my scripts copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:  
 https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/master/index.xml<br/>
