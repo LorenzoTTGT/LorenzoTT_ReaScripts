@@ -252,7 +252,6 @@ local function gorenderst()
     local FileNameWCPattern = GUI.Val("File Name Pattern $") 
     local sel_WAVformat = GUI.Val("WAV Renders") 
     local sel_RenderDest = GUI.Val("Renders Destination")
-    local sel_ImageSource = GUI.Val("Logo Image Source")
     local sel_DDP_Render = GUI.Val("DDP Render")
     local sel_Logo_H = GUI.Val("Logo Height")
     local sel_PQsheet = GUI.Val("PQ Sheet")
@@ -604,8 +603,10 @@ local function gorenderst()
         sel_Body_Offset_Factor = 690 - (sel_Image_Size_Factor)
         interlineFactor = 30
         page2true = 0
-        page = p:new_page(1,1)
-        page2 = p:new_page() 
+        local sel_ImageSource = GUI.Val("Logo Image Source")
+        sel_Image_w, sel_Image_h = GetImageWidthHeight(sel_ImageSource)
+        page = p:new_page(1,1,sel_Image_w,sel_Image_h)
+        page2 = p:new_page(2,2) 
         -- Select Image File or NOT
         if GUI.Val("Logo Image Source") == "no logo"
             then  
@@ -613,7 +614,6 @@ local function gorenderst()
         else  
             fileToStream = io.open(tostring(sel_ImageSource), "rb")
             fileToStreamBIN = fileToStream:read("*all")
-            sel_Image_w, sel_Image_h = GetImageWidthHeight(sel_ImageSource)
             sel_Image_ratio = sel_Image_w / sel_Image_h
             sel_Image_h_scaled = sel_Image_Size_Factor * sel_Image_ratio
             sel_Image_scaledXpos = 293 - (sel_Image_h_scaled / 2)
