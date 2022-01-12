@@ -3,7 +3,7 @@
 ## Welcome to My Reascripts. I make scripts and actions for mastering workflows in Reaper.  
 you can contact me here: lorenzotarghetta@gmail.com  
 and donate here to my Paypal: lorenzo.7waka@gmail.com  
-----------
+
 To install my scripts copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:  
 https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/master/index.xml<br/>
 Then go to Reaper>Extensions>ReaPack>Browse Packages> right+clik on the LorenzoTT Script that you want to install > Install > Apply  
