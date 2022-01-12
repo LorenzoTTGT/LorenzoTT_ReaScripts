@@ -1,6 +1,6 @@
 # LorenzoTT ReaPack Repository
 
-## Welcome to My Reascripts. My name is Lorenzo Targhetta and i make scripts and actions for mastering workflows in Reaper. 
+## Welcome to My Reascripts. I make scripts and actions for mastering workflows in Reaper. 
 
 
 To install my scripts copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:  
