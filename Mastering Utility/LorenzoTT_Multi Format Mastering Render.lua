@@ -1,9 +1,9 @@
 --[[
 ReaScript name: LorenzoTT_Multi Format Mastering Render
-Version: 1.0.20
+Version: 1.0.21
 Author: Lorenzo Targhetta
 @changelog
-    JPG auto w & h
+    -1 stream length
 @provides 
     ../LorenzoTT_Libs/LorenzoTT_GetImageSize.lua 
     ../LorenzoTT_Libs/LorenzoTT_WRITE_PDF_TO_DISK.lua
