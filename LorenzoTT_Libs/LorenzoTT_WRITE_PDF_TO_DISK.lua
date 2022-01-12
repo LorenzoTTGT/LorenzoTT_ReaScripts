@@ -418,7 +418,7 @@ PDF.new_LorenzoTT = function()
                     Width = pdf_img_W,
                     ColorSpace = "/DeviceRGB",
                     BitsPerComponent = "8",
-                    Length = string.len(jpgstream) + 1,
+                    Length = string.len(jpgstream),
                     Filter = "/DCTDecode"
                                 }
                             }
