@@ -1,7 +1,6 @@
 # LorenzoTT ReaPack Repository
 
-## Welcome to My Reascripts.  
-## I do scipts for mastering workflows. 
+## Welcome to My Reascripts. I do scipts for mastering workflows. 
 
 
 To install my scripts copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:  
