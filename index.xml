@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="86d2805912e11016352d1ab12e89fc9743fd711a">
+<index version="1" name="LorenzoTT_ReaScripts" commit="52ae30523e08e0c59ce5485f17960dd24fe34fdc">
   <category name="Mastering Utility">
     <reapack name="LorenzoTT_Add Time Marker from Cursor Project Time Position.lua" type="script" desc="LorenzoTT_Add Time Marker from Cursor Project Time Position">
       <version name="1.0.3" author="Lorenzo Targhetta" time="2022-01-14T14:12:50Z">
@@ -9,6 +9,9 @@
     <reapack name="LorenzoTT_Add Time Marker from Cursor Region Time Position.lua" type="script" desc="LorenzoTT_Add Time Marker from Cursor Region Time Position">
       <version name="1.0.1" author="Lorenzo Targhetta" time="2022-01-14T14:12:50Z">
         <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/86d2805912e11016352d1ab12e89fc9743fd711a/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Region%20Time%20Position.lua</source>
+      </version>
+      <version name="1.0.2" author="Lorenzo Targhetta" time="2022-01-14T14:27:18Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/52ae30523e08e0c59ce5485f17960dd24fe34fdc/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Region%20Time%20Position.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Delete Markers By Name.lua" type="script" desc="LorenzoTT_Delete Project Markers By Name (or Name Inititals)">
@@ -122,7 +125,7 @@
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 LorenzoTT ReaPack Repository\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Welcome to My Reascripts. I make scripts and actions for mastering workflows in Reaper.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 you can contact me here: lorenzotarghetta@gmail.com\line and donate here to my Paypal: lorenzo.7waka@gmail.com\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 My name is Lorenzo Targhetta.\line You can contact me here: lorenzotarghetta@gmail.com\line and donate here to my Paypal: lorenzo.7waka@gmail.com\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 To install my scripts copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories:\line https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/master/index.xml Then go to Reaper>Extensions>ReaPack>Browse Packages> right+clik on the LorenzoTT Script that you want to install > Install > Apply\line Then go t\u224? Reaper>Actions>Show Actions List> find the orenzoTT Script that you want to run> Run Action\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Make Sure to also install Ultraschall API, copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories: https://github.com/Ultraschall/ultraschall-lua-api-for-reaper/raw/master/ultraschall_api_index.xml\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 And also the "js_ReaScriptAPI" Go to Reaper>Extensions>ReaPack>Browse Packages> right+clik on js_ReaScriptAPI > Install > Apply. or if its not found then copy/paste this URL to Reaper>Extensions>ReaPack>Import Repositories: https://github.com/ReaTeam/Extensions/raw/master/index.xml and redo the browse package search.\par}
