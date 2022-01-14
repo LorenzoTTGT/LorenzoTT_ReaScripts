@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="LorenzoTT_ReaScripts" commit="fce198f5fbc75351b67910890c1ef1b1ed0800b2">
+<index version="1" name="LorenzoTT_ReaScripts" commit="86d2805912e11016352d1ab12e89fc9743fd711a">
   <category name="Mastering Utility">
-    <reapack name="LorenzoTT_Add Time Marker from Cursor Time Position.lua" type="script" desc="LorenzoTT_Add Time Marker from Cursor Time Position">
-      <version name="1.0" author="Lorenzo Targhetta" time="2022-01-09T00:21:43Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/e855281e1b0f30683675607cee77b15e145f2cf9/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Time%20Position.lua</source>
+    <reapack name="LorenzoTT_Add Time Marker from Cursor Project Time Position.lua" type="script" desc="LorenzoTT_Add Time Marker from Cursor Project Time Position">
+      <version name="1.0.3" author="Lorenzo Targhetta" time="2022-01-14T14:12:50Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/86d2805912e11016352d1ab12e89fc9743fd711a/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Project%20Time%20Position.lua</source>
       </version>
-      <version name="1.0.1" author="Lorenzo Targhetta" time="2022-01-09T01:26:58Z">
-        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/bfb2c3ec11ed3f695151a9a27e49b9a6a58f77c6/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Time%20Position.lua</source>
+    </reapack>
+    <reapack name="LorenzoTT_Add Time Marker from Cursor Region Time Position.lua" type="script" desc="LorenzoTT_Add Time Marker from Cursor Region Time Position">
+      <version name="1.0.1" author="Lorenzo Targhetta" time="2022-01-14T14:12:50Z">
+        <source main="main">https://github.com/LorenzoTTGT/LorenzoTT_ReaScripts/raw/86d2805912e11016352d1ab12e89fc9743fd711a/Mastering%20Utility/LorenzoTT_Add%20Time%20Marker%20from%20Cursor%20Region%20Time%20Position.lua</source>
       </version>
     </reapack>
     <reapack name="LorenzoTT_Delete Markers By Name.lua" type="script" desc="LorenzoTT_Delete Project Markers By Name (or Name Inititals)">
